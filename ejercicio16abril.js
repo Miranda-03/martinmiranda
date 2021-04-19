@@ -31,21 +31,28 @@ numX = document.getElementById("num2").value;
 function comprobarMail(correo){
 correo = document.getElementById("e-mail").value;
 var verf;
-for(var f = 1; f < (correo.length - 1); f++){
-   if(correo[f] == "@"){
-       verf = 1;
-   }
-}
-
-if(verf == 1){
-    document.getElementById("validacion").innerHTML = "Correo valido!";
-    document.getElementById("validacion").style.color = "green";
-   return true;
-}
-else{
-   document.getElementById("validacion").innerHTML = "Correo invalido!";
+if(correo[1] == "@" || correo[correo.length] == "@"){
+    document.getElementById("validacion").innerHTML = "Correo invalido!";
    document.getElementById("validacion").style.color = "red";
    return false;
+}
+else{
+    for(var f = 1; f < (correo.length - 1); f++){
+        if(correo[f] == "@"){
+            verf = 1;
+        }
+     }
+     
+     if(verf == 1){
+         document.getElementById("validacion").innerHTML = "Correo valido!";
+         document.getElementById("validacion").style.color = "green";
+        return true;
+     }
+     else{
+        document.getElementById("validacion").innerHTML = "Correo invalido!";
+        document.getElementById("validacion").style.color = "red";
+        return false;
+     }
 }
 }
 
