@@ -31,7 +31,7 @@ numX = document.getElementById("num2").value;
 function comprobarMail(correo){
 correo = document.getElementById("e-mail").value;
 var verf;
-if(correo[1] == "@" || correo[correo.length] == "@"){
+if(correo[0] == "@" || correo[correo.length] == "@"){
     document.getElementById("validacion").innerHTML = "Correo invalido!";
    document.getElementById("validacion").style.color = "red";
    return false;
