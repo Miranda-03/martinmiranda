@@ -1,7 +1,7 @@
 package com.company;
 import java.util.Scanner;
 
-public class producto{
+ class producto{
     private String nombre;
     private float precio;
 

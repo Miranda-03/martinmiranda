@@ -13,18 +13,18 @@ int main(){
 
     while(1){
 
-        cout<<"producto: ";
+        cout<<"producto: "
         cin>>producto;
-        cout<<"precio: ";
-        cin>>precio;
+        cout<<"precio: "
+        cout>>precio;
 
-        productos.push_back(producto);
-        precios.push_back(precio);
+        productos.push_back(producto)
+        precios.push_back(precio)
 
         cout<<" "<<endl;
 
-        cout<<"¿continuar? y (si), n (no): ";
-        cin>>cont;
+        cout<<"¿continuar? y (si), n (no): "
+        cin>>cont
         if(cont == "n"){
             break;
         }

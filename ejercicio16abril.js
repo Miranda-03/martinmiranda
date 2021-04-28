@@ -4,7 +4,7 @@ numero = [];
 
 numX = [];
 
-var cant = 0;
+var cant = 6;
 
 let correo;
 
