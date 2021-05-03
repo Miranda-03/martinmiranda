@@ -9,13 +9,8 @@ public class Persona {
     private String direccion;
     private int telefono;
 
-    public Persona(){
-        nombre ="Jose";
-        edad= 35;
-        dni= 234543;
-        direccion = "Rivadavia 2314";
-        telefono = 33430203;
-    }
+    public Persona(){}
+
 
 
     public Persona(String nombre){

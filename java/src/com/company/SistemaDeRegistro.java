@@ -11,7 +11,7 @@ public class SistemaDeRegistro {
     }
 
     public void iniciarSistema() {
-        System.out.println("Sistema de registros \n \n ¿Que desea hacer? \n \n (- 1 -) Ingresar nuevo Producto \n (- 2 -) Eliminar Producto \n (- 3 -) Ver lista de productos y el importe total \n (- 4 -) Finalizar y salir");
+        System.out.println("Sistema de registros \\n \\n ¿Que desea hacer? \\n \\n (- 1 -) Ingresar nuevo Producto \n (- 2 -) Eliminar Producto \n (- 3 -) Ver lista de productos y el importe total \n (- 4 -) Finalizar y salir");
     }
 
     public void registrarProducto(producto2 p) {
