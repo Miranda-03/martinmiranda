@@ -1,0 +1,21 @@
+#cuadrado {
+	width: 2cm;
+	height: 2cm;
+	margin-left: 1cm;
+	margin-top: 1cm;
+	transition: all 0.5s;
+}
+
+#cuadrado img{
+	width: 2cm;
+	height: 2cm;
+}
+
+body {
+	background-color: linen;
+	display:ruby;
+}
+
+#botones {
+	margin-top: 60%;
+}

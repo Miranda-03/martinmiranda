@@ -73,6 +73,10 @@ public class SistemaDeRegistroDePersonas {
                 int edad2;
                 int dni2;
                 int telefono2;
+
+
+
+
                 String direccion2;
 
 
