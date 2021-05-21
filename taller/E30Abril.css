@@ -3,7 +3,17 @@
 	height: 2cm;
 	margin-left: 1cm;
 	margin-top: 1cm;
-	transition: all 0.5s;
+	position: absolute;
+	background-color: darkblue;
+}
+
+#cuadrado2 {
+	width: 2cm;
+	height: 2cm;
+	margin-left: 5cm;
+	margin-top: 3cm;
+	position: absolute;
+	background-color: rgb(90, 226, 0);
 }
 
 #cuadrado img{
