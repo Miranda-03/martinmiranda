@@ -23,4 +23,10 @@ public class Libro {
     public String getNombreEditorial(){
         return nombreEditorial;
     }
+
+    public void setNombre(String nombre){this.nombre = nombre;}
+
+    public void setPrecio(float precio){this.precio = precio;}
+
+    public void setNombreEditorial(String editorial){nombreEditorial = nombre;}
 }
