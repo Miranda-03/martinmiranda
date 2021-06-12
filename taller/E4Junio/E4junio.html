@@ -2,17 +2,24 @@
  <head>
     <title>Ejercicio del 4 de Junio </title>
     <script type="text/javascript" src="E4Junio.js"></script>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 
-<button type="button" id="mostar" onclick="mostrarTodo()">ingresar fila</button>
 
-<button type="button" id="agregar" style="display: none;" onclick="ingresarDatos()">ingresar datos</button>
 
 
     <div id="contenedor">
-        <table id="tabla">
-            <tr style="color: red;">
+
+        
+            <button type="button" id="mostrar" onclick="mostrarTodo()">Nuevos datos</button>
+        
+            <button type="button" id="agregar" style="display: none;" onclick="ingresarDatos()">Ingresar</button>    
+        
+
+
+        <table id="tabla" style="border-spacing: 0;">
+            <tr id="columnas" style="color: red;">
                 <td>Nombre</td>
                 <td>Apellido</td>
                 <td>Edad</td>

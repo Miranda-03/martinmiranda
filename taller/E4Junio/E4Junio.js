@@ -14,6 +14,7 @@ let inp3;
 function mostrarTodo(){
     tab = document.getElementById("tabla");
     tl = document.createElement("tr");
+    tl.setAttribute("id", "infoFilas");
 
     ti = document.createElement("td");
     ti.setAttribute("id", "inputELiminar");
@@ -39,7 +40,7 @@ function mostrarTodo(){
     inp2.setAttribute("id", "in2");
 
     inp3 = document.createElement("input");
-    inp3.setAttribute("type", "text");
+    inp3.setAttribute("type", "number");
     inp3.setAttribute("id", "in3");
 
     
@@ -54,7 +55,7 @@ function mostrarTodo(){
     
     tab.appendChild(tl);
 
-    let botonMostar = document.getElementById("mostar");
+    let botonMostar = document.getElementById("mostrar");
     botonMostar.style.display = "none";
 
     let botonAgregar = document.getElementById("agregar");
@@ -62,7 +63,7 @@ function mostrarTodo(){
 }
 
 function ingresarDatos(){
-    let botonMostar = document.getElementById("mostar");
+    let botonMostar = document.getElementById("mostrar");
     botonMostar.style.display = "block";
 
     let botonAgregar = document.getElementById("agregar");
