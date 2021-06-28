@@ -52,7 +52,11 @@ public class Banco {
         for(Map.Entry<Integer, Integer> aux : visitas.entrySet()){
             Integer clave = aux.getKey();
             Integer valor = aux.getValue();
-            System.out.println("clave: " + clave + " - valor : " + valor );
+
+            String clave2 = clave.toString();
+            String valor2 = valor.toString();
+
+            System.out.println("clave: " + clave2 + " - valor : " + valor2 );
         }
     }
 }
