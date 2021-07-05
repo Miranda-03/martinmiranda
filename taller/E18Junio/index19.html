@@ -1,3 +1,9 @@
+
+<head>
+    <script src="jquery-3.6.0.js"></script>
+</head>
+
+
 <p>Escriba su nombre</p>
 <input type = "text" id = "nombre">
 
@@ -19,24 +25,14 @@
             var edad = document.getElementById("edad").value;
             var mensaje = "Soy " + nombre + " " + apellido + " y tengo " + edad + " años";
             var mensaje2 = "Soy " + nombre + " " + apellido + " y tengo " + edad + " año";
-            document.getElementById("resultado").innerHTML = mensaje;
-            document.getElementById("resultado").style.color = "yellow";
-
-            if(edad > 18){
-                document.body.style.backgroundColor = "blue";
-
-            }
-            if(edad < 18){
-                document.body.style.backgroundColor = "green";
-
-            }
             if(edad == 1){
-                document.getElementById("resultado").innerHTML = mensaje2;
+                $("#resultado").text(mensaje2);
+            }
+            else{
+                $("#resultado").text(mensaje);
             }
             if(edad < 1){
-                document.getElementById("resultado").innerHTML = "edad no valida";
-                document.getElementById("resultado").style.color = "red";
-                document.body.style.backgroundColor = "white";
+                $("#resultado").text("edad no valida");
             }
         }
 
