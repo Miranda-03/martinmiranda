@@ -1,0 +1,68 @@
+
+    <head>
+        <script src="jquery-3.6.0.js"></script>
+    </head>
+
+
+    <div>
+        <p>Introduzca un numero</p>
+    
+        <input id="num1" type="number">
+        
+        <p>Introduzca otro numero</p>
+        
+        <input id="num2" type="number">
+    
+    </div>
+    
+    
+    <div style="padding-top: 20px;"> 
+    
+        <button  onclick="sum()" style="background-color: darkslategrey; color: floralwhite; padding: 7px; border-radius: 5px;">SUMAR</button>
+        <button  onclick="res()" style="background-color: darkslategrey; color: floralwhite; padding: 7px; border-radius: 5px;">RESTAR</button>
+        <button  onclick="div()" style="background-color: darkslategrey; color: floralwhite; padding: 7px; border-radius: 5px;">DIVIDIR</button>
+        <button  onclick="mul()" style="background-color: darkslategrey; color: floralwhite; padding: 7px; border-radius: 5px;">MULTIPLICAR</button>
+    
+    </div>
+
+    <h id="resultado" style="font-size: 70px; color: darkslategrey;"></h>
+
+    <script>
+
+        
+
+        function sum(){
+            var total=parseFloat($('#num1').val()) + parseFloat($('#num2').val());
+            $("#resultado").text(total);
+        }
+
+
+        function res(){
+
+            var total=parseFloat($('#num1').val()) - parseFloat($('#num2').val());
+            $("#resultado").text(total);
+
+        }
+
+
+        function div(){
+
+            var total=parseFloat($('#num1').val()) / parseFloat($('#num2').val());
+            $("#resultado").text(total);
+
+        }
+        
+        function mul(){
+
+            var total=parseFloat($('#num1').val()) * parseFloat($('#num2').val());
+            $("#resultado").text(total);
+
+        }
+
+        
+
+    </script>
+    
+    
+
+
