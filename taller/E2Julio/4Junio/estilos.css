@@ -1,0 +1,42 @@
+
+
+#tabla{
+    margin: auto; 
+}
+
+#contenedor{
+    width: 100%;
+}
+
+#agregar, #mostrar{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+#columnas td{
+    padding-right: 100pt;
+    background-color: cornsilk;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-color: gray;
+    padding-left: 5px;
+}
+
+#infoFilas td{
+    background-color: lavender;
+    padding-left: 5px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-color: gray;
+}
+
+#columnas td:first-child{
+    border-left-style: none;
+}
+
+#infoFilas td:first-child{
+    border-style: none;
+}
