@@ -1,15 +1,24 @@
-<p>Escriba su nombre</p>
-<input type = "text" id = "nombre">
 
-<p>Escriba su apellido</p>
-<input type = "text" id = "apellido">
+<head>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<div id="contenedor">
+    <div id="contenedorInputs">
+        <p>Escriba su nombre</p>
+        <input type = "text" id = "nombre">
 
-<p>Escriba su edad</p>
-<input type = "number" id = "edad">
+        <p>Escriba su apellido</p>
+        <input type = "text" id = "apellido">
 
-<button onclick="mostrar()">MOSTRAR</button>
+        <p>Escriba su edad</p>
+        <input type = "number" id = "edad">
+    </div>
 
-<h1 id = "resultado"></h1>
+    <button id="botonMostrar" onclick="mostrar()">MOSTRAR</button>
+
+    <h1 id = "resultado"></h1>
+
+</div>
 
 <script>
 
@@ -21,19 +30,29 @@
             var mensaje2 = "Soy " + nombre + " " + apellido + " y tengo " + edad + " año";
             document.getElementById("resultado").innerHTML = mensaje;
             document.getElementById("resultado").style.color = "yellow";
+            let titulo = document.getElementsByTagName("p");
 
-            if(edad > 18){
+            if(edad => 18){
                 document.body.style.backgroundColor = "blue";
+                for(let y = 0; y < titulo.length; y++){
+                    titulo[y].style.color = "white"
+                }
 
             }
             if(edad < 18){
                 document.body.style.backgroundColor = "green";
+                for(let y = 0; y < titulo.length; y++){
+                    titulo[y].style.color = "white"
+                }
 
             }
             if(edad == 1){
                 document.getElementById("resultado").innerHTML = mensaje2;
             }
             if(edad < 1){
+                for(let y = 0; y < titulo.length; y++){
+                    titulo[y].style.color = "black"
+                }
                 document.getElementById("resultado").innerHTML = "edad no valida";
                 document.getElementById("resultado").style.color = "red";
                 document.body.style.backgroundColor = "white";

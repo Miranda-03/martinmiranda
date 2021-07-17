@@ -1,7 +1,7 @@
 #cuadrado {
 	width: 2cm;
 	height: 2cm;
-	margin-left: 1cm;
+	margin-left: 0cm;
 	margin-top: 1cm;
 	position: absolute;
 	background-color: rgb(168, 197, 0);
@@ -17,9 +17,12 @@
 	border-radius: 60px;
 }
 
-#cuadrado img{
-	width: 2cm;
-	height: 2cm;
+#contenedor{
+	width: 100%;
+	height: 100%;
+	display: inline-grid;
+	justify-content: center;
+	align-items: center;
 }
 
 body {
@@ -27,6 +30,16 @@ body {
 	display:ruby;
 }
 
-#botones {
-	margin-top: 60%;
+#botones{
+	margin-top: 0;
+	padding: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-style: none;
+	outline-style: none;
+	cursor: pointer;
+}
+
+#botones:hover{
+	background-color: blanchedalmond;
 }

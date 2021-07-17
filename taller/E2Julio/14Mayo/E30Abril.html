@@ -10,14 +10,24 @@
 
 	<body>
 
-		<div onmouseover="moverHaciaAbajo()" onclick="moverHaciaArriba()" id="cuadrado"></div>
+		<div id="contenedor">
 
-        <div style="display: table-caption;">
-            <button  onclick="moverDerecha()" style="font-size: 10pt;">→</button>
-            <button  onclick="moverIzquierda()" style="font-size: 10pt;">←</button>
-        </div>
+			<div id="contenedorCuadrados">
 
-		<div  id="cuadrado2"></div>
+				<div onmouseover="moverHaciaAbajo()" onclick="moverHaciaArriba()" id="cuadrado">  
+				</div>
+
+				<div  id="cuadrado2"></div>
+
+			</div>
+
+			<div id="contenedorBotones">
+				<button id="botones"  onclick="moverIzquierda()" style="font-size: 10pt;">←</button>
+				<button id="botones" onclick="moverDerecha()" style="font-size: 10pt;">→</button>
+			</div>
+
+
+		</div>
 		
 	</body>
 

@@ -1,23 +1,28 @@
-<input id="num" type="number">
+<div id="contenedor"> 
+    <div>
+        <input id="num" type="number">
 
-<button onclick="crearArreglo(arreglo, numero)">Push to array</button>
+        <button onclick="crearArreglo(arreglo, numero)">Push to array</button>
+    </div>
 
-<input id="num2" type="number">
+    <div>
+        <input id="num2" type="number">
 
-<button onclick="cantApariciones(arreglo, cant, numX)">cantidad de apariciones</button>
+        <button onclick="cantApariciones(arreglo, cant, numX)">cantidad de apariciones</button>
+    </div>
+    <div>
 
-<div>
+        <input id="e-mail" type="email">
 
-    <input id="e-mail" type="email">
+        <button onclick="comprobarMail(correo)">Verificar</button>
 
-    <button onclick="comprobarMail(correo)">Verificar</button>
+    </div>
 
-</div>
+    <div>    
         <input id="numeroTelefono" type="text">
 
         <button onclick="comprobarNumero(numeroT)">Verificar numero</button>
-
-<div>
+    </div>
 
 </div>
 
@@ -63,9 +68,11 @@
         }
 
         if(verf == 1){
+            console.log("true");
             return true;
         }
         else{
+            console.log("false");
             return false;
         }
       }
@@ -79,6 +86,7 @@
                     contNumeros++;
                 }
                 if(contNumeros == 8){
+                    console.log("true");
                     return true;
                 }
               }
@@ -88,6 +96,7 @@
                     contNumeros++;
                 }
                 if(contNumeros == 8){
+                    console.log("true");
                     return true;
                 }
           }
@@ -96,3 +105,41 @@
       
 
 </script>
+
+
+<style>
+    #contenedor{
+        display: inline-grid;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    div{
+        margin: auto;
+    }
+
+    input{
+        border-style: none;
+        padding: 5px;
+        background-color: #e4e4e4 !important;
+        border-bottom-style: solid;
+        outline-style: none;
+    }
+
+    button{
+        margin: auto;
+        border-style: none;
+        outline-style: none;
+        font-family: system-ui;
+        cursor: pointer;
+        padding: 4px;
+    }
+
+    button:hover{
+        border-bottom-style: solid;
+        border-color: black;
+        border-width: 2px;
+    }
+</style>

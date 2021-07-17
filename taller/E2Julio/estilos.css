@@ -104,6 +104,7 @@ h1{
 
 #listado li input:hover{
     background-color: #929292;
+    outline-style: none;
 }
 
 #contenido{
