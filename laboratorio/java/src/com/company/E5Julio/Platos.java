@@ -10,4 +10,20 @@ public class Platos {
         this.nombrePlato = nombrePlato;
         this.precio = precio;
     }
+
+    public String getNombrePlato() {
+        return nombrePlato;
+    }
+
+    public float getPrecio() {
+        return precio;
+    }
+
+    public void setNombrePlato(String nombrePlato) {
+        this.nombrePlato = nombrePlato;
+    }
+
+    public void setPrecio(float precio) {
+        this.precio = precio;
+    }
 }

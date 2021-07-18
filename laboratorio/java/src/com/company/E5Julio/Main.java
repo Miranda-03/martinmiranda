@@ -14,6 +14,7 @@ public class Main {
         String nombrePersona;
 
         String nombre;
+        String nombrePlato;
         String apellido;
         String division;
         float porcentajeDescuento;
@@ -23,7 +24,7 @@ public class Main {
         int opcionSegunda;
         int opcionTercera;
         int indicarTipoPersona;
-        float precioPlatoPedido;
+        float precioPlatoPedido = 0;
 
         Scanner ingresarOpcionPrimera = new Scanner(System.in);
         Scanner ingresarOpcionSegunda = new Scanner(System.in);
@@ -32,7 +33,7 @@ public class Main {
 
         ArrayList<Alumno> alumnos = new ArrayList<>();
         ArrayList<Profesor> profesores = new ArrayList<>();
-        ArrayList<Pedido> listaPedidos = new ArrayList<>();
+        ArrayList<Pedidos> listaPedidos = new ArrayList<>();
         ArrayList<Platos> listaPlatos = new ArrayList<>();
 
 
@@ -48,12 +49,36 @@ public class Main {
                 bloqueoWhile = true;
             }
             else if(opcionPrimera == 5){
-                for(Pedido pedidoAux : listaPedidos){
-                    if((pedidoAux.getPersona()).getClass().getSimpleName() == "Profesor"){
-                        Profesor p = (Profesor) pedidoAux.getPersona();
+                for(Pedidos pedidoAux : listaPedidos){
+                    if((pedidoAux.getPersonaPedido()).getClass().getSimpleName() == "Profesor"){
+                        Profesor p = (Profesor) pedidoAux.getPersonaPedido();
                         float descuentoPlatoPedido = p.getPorcentajeDescuento();
-                        precioPlatoPedido = (pedidoAux.getPlato()).getPrecio();
+                        nombrePlato = pedidoAux.getNombrePlatoPedido();
+                        for(Platos platoAux : listaPlatos){
+                            if(platoAux.getNombrePlato().equals(nombrePlato)){
+                                precioPlatoPedido = platoAux.getPrecio();
+                                break;
+                            }
+                        }
                         precioPlatoPedido = precioPlatoPedido - ((precioPlatoPedido * descuentoPlatoPedido) / 100);
+                    }
+                    else{
+                        nombrePlato = pedidoAux.getNombrePlatoPedido();
+                        for(Platos platoAux : listaPlatos){
+                            if(platoAux.getNombrePlato().equals(nombrePlato)){
+                                precioPlatoPedido = platoAux.getPrecio();
+                                break;
+                            }
+                        }
+                    }
+
+                    for(Pedidos pedido : listaPedidos){
+                        System.out.println(pedido.getPersonaPedido().getNombre());
+                        System.out.println(pedido.getFechaCreacion());
+                        System.out.println(pedido.getNombrePlatoPedido());
+                        System.out.println(pedido.getHoraEntrega());
+                        System.out.println(precioPlatoPedido);
+                        System.out.println("\n");
                     }
                 }
             }
@@ -105,22 +130,23 @@ public class Main {
                     }
                     else if(opcionPrimera == 3){
                         for(Platos platoAux : listaPlatos){
-                            if(platoAux.getNombre().equals(nombre)){
+                            if(platoAux.getNombrePlato().equals(nombre)){
                                 System.out.println(" 1 - Nombre \n 2 - Precio");
                                 opcionTercera = ingresarOpcionTercera.nextInt();
                                 if(opcionTercera == 1){
                                     nombre = ingresarDatos.nextLine();
-                                    listaPlatos.get(listaPlatos.indexOf(platoAux)).setNombre(nombre);
+                                    listaPlatos.get(listaPlatos.indexOf(platoAux)).setNombrePlato(nombre);
                                 }
                                 else if(opcionTercera == 2){
                                     precio = ingresarDatos.nextInt();
                                     listaPlatos.get(listaPlatos.indexOf(platoAux)).setPrecio(precio);
                                 }
+                                ingresarDatos.nextLine();
                             }
                         }
                     }
                     else if(opcionPrimera == 4){
-                        for(Pedido pedidoAux : listaPedidos){
+                        for(Pedidos pedidoAux : listaPedidos){
                             if(pedidoAux.getNombrePedido().equals(nombre)){
                                 System.out.println(" 1 - Nombre \n 2 - Fecha \n 3 - Plato \n 4 - Persona \n 5 - Hora de entrega \n 6 - cambiar a entregado");
                                 opcionTercera = ingresarOpcionTercera.nextInt();
@@ -130,25 +156,22 @@ public class Main {
                                 }
                                 else if(opcionTercera == 2){
                                     fechaCreacion = ingresarDatos.nextLine();
-                                    listaPedidos.get(listaPedidos.indexOf(pedidoAux)).setFecha(fechaCreacion);
+                                    listaPedidos.get(listaPedidos.indexOf(pedidoAux)).setFechaCreacion(fechaCreacion);
                                 }
                                 else if(opcionTercera == 3){
                                     System.out.println("ingrese nombre de plato: ");
                                     nombrePlatoPedido = ingresarDatos.nextLine();
-                                    for(Platos platoAux : listaPlatos){
-                                        if(platoAux.getNombre().equals(nombrePlatoPedido)){
-                                            listaPedidos.get(listaPedidos.indexOf(pedidoAux)).setPlato(platoAux);
-                                        }
-                                    }
+                                    listaPedidos.get(listaPedidos.indexOf(pedidoAux)).setNombrePlatoPedido(nombrePlatoPedido);    
                                 }
                                 else if(opcionTercera == 4){
                                     System.out.println("1 - profesor \n 2 - alumno");
                                     indicarTipoPersona = ingresarDatos.nextInt();
+                                    ingresarDatos.nextLine();
                                     if(indicarTipoPersona == 1) {
                                         nombre = ingresarDatos.nextLine();
                                         for (Profesor profesorAux : profesores) {
                                             if (profesorAux.getNombre().equals(nombre)) {
-                                                listaPedidos.get(listaPedidos.indexOf(pedidoAux)).setPersona(profesorAux);
+                                                listaPedidos.get(listaPedidos.indexOf(pedidoAux)).setPersonaPedido(profesorAux);
                                             }
                                         }
                                     }
@@ -156,7 +179,7 @@ public class Main {
                                         nombre = ingresarDatos.nextLine();
                                         for (Alumno alumnoAux : alumnos) {
                                             if (alumnoAux.getNombre().equals(nombre)) {
-                                                listaPedidos.get(listaPedidos.indexOf(pedidoAux)).setPersona(alumnoAux);
+                                                listaPedidos.get(listaPedidos.indexOf(pedidoAux)).setPersonaPedido(alumnoAux);
                                             }
                                         }
                                     }
@@ -166,7 +189,7 @@ public class Main {
                                     listaPedidos.get(listaPedidos.indexOf(pedidoAux)).setHoraEntrega(horaEntrega);
                                 }
                                 else if(opcionTercera == 6){
-                                    listaPedidos.get(listaPedidos.indexOf(pedidoAux)).setEntrego(true);
+                                    listaPedidos.get(listaPedidos.indexOf(pedidoAux)).setEntregado(true);
                                 }
                             }
                         }
@@ -182,6 +205,7 @@ public class Main {
                         porcentajeDescuento = ingresarDatos.nextFloat();
                         Profesor nuevoProfesor = new Profesor(porcentajeDescuento, apellido, nombre);
                         profesores.add(nuevoProfesor);
+                        ingresarDatos.nextLine();
                     }
                     else if(opcionPrimera == 2){
                         System.out.print("nombre: ");
@@ -200,6 +224,7 @@ public class Main {
                         precio = ingresarDatos.nextFloat();
                         Platos nuevoPlato = new Platos(nombre, precio);
                         listaPlatos.add(nuevoPlato);
+                        ingresarDatos.nextLine();
                     }
                     else if(opcionPrimera == 4){
                         Profesor ingresarProfesor = new Profesor();
@@ -212,12 +237,13 @@ public class Main {
                         System.out.print("nombre plato");
                         nombrePlatoPedido = ingresarDatos.nextLine();
                         for(Platos platoAux : listaPlatos){
-                            if(platoAux.getNombre().equals(nombrePlatoPedido)){
+                            if(platoAux.getNombrePlato().equals(nombrePlatoPedido)){
                                 platoPedido = listaPlatos.get(listaPlatos.indexOf(platoAux));
                             }
                         }
                         System.out.println("1 - ingresar profesor \n 2 - ingresar alumno");
                         indicarTipoPersona = ingresarDatos.nextInt();
+                        ingresarDatos.nextLine();
                         if(indicarTipoPersona == 1){
                             System.out.print("nombre profesor");
                             nombrePersona = ingresarDatos.nextLine();
@@ -239,12 +265,15 @@ public class Main {
 
                         System.out.print("hora de entrega: ");
                         horaEntrega = ingresarDatos.nextLine();
+                        System.out.print("Ingresar nombre del pedido: ");
+                        nombre = ingresarDatos.nextLine();
                         if(indicarTipoPersona == 1){
-                            Pedido nuevoPedido = new Pedido(nombre, fechaCreacion, platoPedido, ingresarProfesor, horaEntrega, false);
+                            Pedidos nuevoPedido = new Pedidos(nombre, ingresarProfesor, platoPedido.getNombrePlato(), fechaCreacion, horaEntrega, false);
                             listaPedidos.add(nuevoPedido);
                         }
                         else if(indicarTipoPersona == 2){
-                            Pedido nuevoPedido = new Pedido(nombre, fechaCreacion, platoPedido, ingresarAlumno, horaEntrega, false);
+    
+                            Pedidos nuevoPedido = new Pedidos(nombre,ingresarAlumno, platoPedido.getNombrePlato(), fechaCreacion, horaEntrega, false);
                             listaPedidos.add(nuevoPedido);
                         }
 
@@ -268,13 +297,13 @@ public class Main {
                     }
                     else if(opcionPrimera == 3){
                         for(Platos platoAux : listaPlatos){
-                            if(platoAux.getNombre().equals(nombre)){
+                            if(platoAux.getNombrePlato().equals(nombre)){
                                 listaPlatos.remove(listaPlatos.indexOf(platoAux));
                             }
                         }
                     }
                     else if(opcionPrimera == 4){
-                        for(Pedido pedidoAux : listaPedidos){
+                        for(Pedidos pedidoAux : listaPedidos){
                             if(pedidoAux.getNombrePedido().equals(nombre)){
                                 listaPedidos.remove(listaPedidos.indexOf(pedidoAux));
                             }

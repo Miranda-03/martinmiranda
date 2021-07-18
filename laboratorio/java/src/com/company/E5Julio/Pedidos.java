@@ -3,6 +3,7 @@ package com.company.E5Julio;
 public class Pedidos {
 
     private Persona personaPedido;
+    private String nombrePedido;
     private String nombrePlatoPedido;
     private String fechaCreacion;
     private String horaEntrega;
@@ -10,12 +11,13 @@ public class Pedidos {
 
     public Pedidos(){}
 
-    public Pedidos(Persona personaPedido, String nombrePlatoPedido, String fechaCreacion, String horaEntrega, boolean entregado){
+    public Pedidos( String nombrePedido, Persona personaPedido, String nombrePlatoPedido, String fechaCreacion, String horaEntrega, boolean entregado){
         this.personaPedido = personaPedido;
         this.nombrePlatoPedido = nombrePlatoPedido;
         this.fechaCreacion = fechaCreacion;
         this.horaEntrega = horaEntrega;
         this.entregado = entregado;
+        this.nombrePedido = nombrePedido;
     }
 
     public Persona getPersonaPedido() {
@@ -57,4 +59,13 @@ public class Pedidos {
     public void setEntregado(boolean entregado) {
         this.entregado = entregado;
     }
+
+    public String getNombrePedido() {
+        return nombrePedido;
+    }
+
+    public void setNombrePedido(String nombrePedido) {
+        this.nombrePedido = nombrePedido;
+    }
+
 }
