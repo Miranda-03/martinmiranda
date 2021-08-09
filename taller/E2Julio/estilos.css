@@ -4,15 +4,48 @@ body{
     background-position: top;
 }
 
-
 #color{
     height: 100%;
     width: 100%;
     height: -webkit-fill-available;
     width: -webkit-fill-available;
     position: fixed;
+    top: 0;
+    left: 0;
     transition:  1.5s;
     background: repeating-linear-gradient(45deg, #1a63ab66, #00000000 450px);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#color:before{
+    content: "";
+    position: absolute;
+    margin-left: -91%;
+    margin-top: 30%;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background-image: repeating-linear-gradient( 
+45deg
+ , #0ba09982, #d4d4f500, #0ba09982 240px);
+    box-shadow: 0px 0px 18px 6px #0000004a;
+}
+
+#color:after{
+    content: "";
+    position: absolute;
+    margin-right: -91%;
+    margin-bottom: 30%;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background-image: repeating-linear-gradient( 
+45deg
+ , #0ba09982, #d4d4f500, #0ba09982 240px);
+    box-shadow: 0px 0px 18px 6px #0000004a;
+    animation: color 15s ease infinite;
 }
 
 h2{
@@ -20,8 +53,6 @@ h2{
     font-size: 17pt;
     font-variant-caps: normal;
 }
-
-
 
 h1{
     font-size: 26pt;
@@ -36,14 +67,39 @@ h1{
     background: linear-gradient(45deg, #0000009e, #3a3a3adb 60%);
 }
 
+#principio:after{
+    content: "";
+    display: block;
+    position: absolute;
+    margin-top: 156px;
+    margin-left: 13.1%;
+    width: 0px;
+    height: 5px;
+    background-image: linear-gradient(45deg, #27c5f5, #5af067, #27c5f5);
+    transition: all 1s;
+}
 
 #principio h1{
     margin-top: 80px;
     position: absolute;
-    color: white;
+    background-image: linear-gradient(90deg, #5af067, #27c5f5, #5af067);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
     margin-left: 13%;
+    transition: all 1s;
 }
 
+
+#principio:hover:after{
+    width: 165px;
+}
+
+#principio:hover h1{
+    background-position-x: 350px;
+}
 
 #principio h2{
     margin-top: 125px;
@@ -66,8 +122,6 @@ h1{
    position: absolute;
 }
 
-
-
 #listado{
     list-style: none;
     padding: 0;
@@ -83,10 +137,15 @@ h1{
     border-left-style: solid;
     border-left-width: 2px;
     border-color: rgba(66, 66, 66);
+    outline-style: none;
 }
 
 #listado li:first-child{
     border-style: none;
+}
+
+#boton{
+    outline-style: none;
 }
 
 #listado li:first-child #boton{
@@ -103,7 +162,7 @@ h1{
 }
 
 #listado li input:hover{
-    background-color: #929292;
+    background-color: #424242;
     outline-style: none;
 }
 
@@ -140,19 +199,38 @@ h1{
 }
 
 
+
 #boton{
     border-style: none;
     background-color: rgb(58, 58, 58);
     cursor: pointer;
     padding: 30px;
     color: white;
-    transition: all 0s cubic-bezier(0.4, 0, 1, 1) 0s;;
+    transition: all 0s cubic-bezier(0.4, 0, 1, 1) 0s;
+    z-index: 2;
+    outline-style: none ;
+}
+
+#listado li:after{
+    content: "";
+    display: block;
+    position: relative;
+    height: 3px;
+    background-image: linear-gradient(45deg, #59acff, #0080ff, #59acff);
+    width: 0;
+    margin: auto;
+    transition: all 0.7s;
+    animation: color 15s ease infinite;
+}
+
+#listado li:hover:after{
+    width: 100%;
 }
 
 #opciones, #opciones18Junio{
     position: absolute;
     display: none;
-    margin-top: 84px;
+    margin-top: 80px;
     margin-left: -124px;
     border-style: solid;
     border-color: #424242;
@@ -160,6 +238,26 @@ h1{
     border-radius: 5px;
     border-top-left-radius: 0;
     box-shadow: 0px 0px 20px 1px black;
+    opacity: 0;
+    transition: all 1s;
 }
+
+#opciones:after, #opciones18Junio:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(58, 58, 58);
+    transform: translate(-50%) rotate(-315deg);
+    left: 20px;
+    top: -5px;
+    border-style: solid;
+    border-color: #424242;
+    border-width: 2px;
+}
+
+
+
 
 
