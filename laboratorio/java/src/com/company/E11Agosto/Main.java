@@ -4,23 +4,31 @@ import com.company.Persona;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.Scanner;
 
 public class Main {
+
+
     public static void main(String[] args) {
         //Ejercicio del 12 de abril
+
+
 
         System.out.println(" ");
 
 
         JFrame ventana = new JFrame();
         ventana.setLayout(null);
-        ventana.setSize(800, 600);
+        ventana.setSize(800, 400);
+
 
         JLabel textoNombre = new JLabel();
         textoNombre.setText("Ingrese nombre");
         textoNombre.setSize(300, 25);
         textoNombre.setLocation(25, 25);
+        textoNombre.setForeground(Color.cyan);
 
         JLabel textoDireccion = new JLabel();
         textoDireccion.setText("Ingrese su direccion");
@@ -65,7 +73,15 @@ public class Main {
         JTextField campoDeTextoTelefono = new JTextField();
         campoDeTextoTelefono.setSize(200,25);
         campoDeTextoTelefono.setLocation(180,145);
+        campoDeTextoDni.setBackground(Color.red);
 
+        JButton boton = new JButton("Introducir");
+        boton.setSize(160, 33);
+        boton.setLocation(25,200);
+
+        JLabel respuesta = new JLabel();
+        respuesta.setSize(790,25);
+        respuesta.setLocation(30,250);
 
         ventana.add(textoNombre);
         ventana.add(textoDireccion);
@@ -77,91 +93,43 @@ public class Main {
         ventana.add(campoDeTextoEdad);
         ventana.add(campoDeTextoDni);
         ventana.add(campoDeTextoTelefono);
+        ventana.add(boton);
+        ventana.add(respuesta);
         ventana.setVisible(true);
 
-        Scanner ingresar = new Scanner(System.in);
-        Scanner ingresar2 = new Scanner(System.in);
+         Persona p0 = new Persona();
 
-        System.out.println("ingrese nombre:");
-        String ponerNombre = ingresar.nextLine();
-        System.out.println("ingrese direccion:");
-        String ponerDireccion = ingresar.nextLine();
-        System.out.println("ingrese edad:");
-        int ponerEdad = ingresar.nextInt();
-        System.out.println("ingrese dni:");
-        int ponerDni = ingresar.nextInt();
-        System.out.println("ingrese telefono:");
-        int ponerTelefono = ingresar.nextInt();
 
-        System.out.flush();
+        boton.addMouseListener(
+
+                new MouseAdapter() {
+
+                    @Override
+                    public void mouseClicked(MouseEvent e) {
+                        String ponerNombre = campoDeTextoNombre.getText();
+                        String Edad = campoDeTextoEdad.getText();
+                        Integer ponerEdad = Integer.parseInt(Edad);
+                        String Dni = campoDeTextoDni.getText();
+                        Integer ponerDni = Integer.parseInt(Dni);
+                        String ponerDireccion = campoDeTextoDireccion.getText();
+                        String telefono = campoDeTextoTelefono.getText();
+                        Integer ponerTelefono = Integer.parseInt(telefono);
+
+                         p0.setNombre(ponerNombre);
+                         p0.setEdad(ponerEdad);
+                         p0.setDni(ponerDni);
+                         p0.setDireccion(ponerDireccion);
+                         p0.setTelefono(ponerTelefono);
+
+                         respuesta.setText("Nombre: " + p0.getNombre() + " | Edad: " + p0.getEdad()+ " | DNI: " + p0.getDni() + " | Direccion: "
+                         + p0.getDireccion() + " | Telefono: " + p0.getTelefono());
+                    }
+                });
+
 
         System.out.println("-----------------------------------");
 
-        int opcion;
 
-        com.company.Persona p0 = new Persona(ponerNombre, ponerEdad, ponerDni, ponerDireccion, ponerTelefono);
-
-        boolean block = false;
-
-
-
-        while(block == false){
-            System.out.println(p0.getNombre());
-            System.out.println(p0.getEdad());
-            System.out.println(p0.getDni());
-            System.out.println(p0.getDireccion());
-            System.out.println(p0.getTelefono());
-
-            System.out.println(" ");
-
-            System.out.println("¿Que desea cambiar?");
-
-            System.out.println(" ");
-
-            System.out.println("(- 1 -) Nombre");
-            System.out.println("(- 2 -) edad");
-            System.out.println("(- 3 -) dni");
-            System.out.println("(- 4 -) direccion");
-            System.out.println("(- 5 -) telefono");
-
-            System.out.println(" ");
-
-            System.out.println("Eliga la opcion o entre '0' para terminar");
-
-            opcion = ingresar.nextInt();
-
-            if(opcion == 0){
-                block = true;
-            }
-            else if(opcion == 1){
-                System.out.println("ingrese nuevo nombre:");
-                ponerNombre = ingresar2.nextLine();
-                p0.setNombre(ponerNombre);
-            }
-            else if(opcion == 2){
-                System.out.println("ingrese nueva edad:");
-                ponerEdad = ingresar2.nextInt();
-                p0.setEdad(ponerEdad);
-            }
-            else if(opcion == 3){
-                System.out.println("ingrese nuevo dni:");
-                ponerDni = ingresar2.nextInt();
-                p0.setDni(ponerDni);
-            }
-            else if(opcion == 4){
-                System.out.println("ingrese nueva direccion:");
-                ponerDireccion = ingresar2.nextLine();
-                p0.setDireccion(ponerDireccion);
-            }
-            else if(opcion == 5){
-                System.out.println("ingrese nuevo telefono:");
-                ponerTelefono = ingresar2.nextInt();
-                p0.setTelefono(ponerTelefono);
-            }
-
-            System.out.println(" ");
-
-        }
     }
     }
 
