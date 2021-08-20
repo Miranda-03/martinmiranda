@@ -7,7 +7,7 @@
     </head>
 
     <body>
-
+        <span id="objeto" style="margin-left: 0; margin-top: 0;"></span>
     <div id="color">
     </div>
         <div id="principio">
@@ -90,6 +90,8 @@
 		            speed: 400,
 	            });
 
+               
+
 
                 function mostrarOpciones(valor){
                     let idModificar;
@@ -112,6 +114,18 @@
                         numeroSacarOpciones = false;
                     }
                 }
+
+                var pelota = document.getElementById("objeto");  
+                
+                window.addEventListener("scroll", () =>{
+                    const finalScroll = window.scrollY;
+                    const totalDocumentScroll = document.body.scrollHeight;
+                    const totalHeight = window.innerHeight;
+                    const top = (finalScroll / ( totalDocumentScroll - totalHeight) * 100);
+                    pelota.style.width = top + "%";
+                });
+                
+
 
 
                 

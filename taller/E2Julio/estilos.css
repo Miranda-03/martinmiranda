@@ -4,6 +4,15 @@ body{
     background-position: top;
 }
 
+span{
+    width: 0px;
+    height: 7px;
+    position: fixed;
+    background-color: rgba(0, 62, 143, 0.719);
+    z-index: 2;
+    transition: all ease-out 0.5s;
+}
+
 #color{
     height: 100%;
     width: 100%;
