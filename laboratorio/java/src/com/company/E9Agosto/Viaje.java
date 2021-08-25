@@ -1,6 +1,6 @@
 package com.company.E9Agosto;
 
-import javax.xml.bind.SchemaOutputResolver;
+
 import java.util.ArrayList;
 
 public class Viaje extends ArrayList<Viaje> {
