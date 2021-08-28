@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    background-color: white;
+}
+
+
+
+#titulo{
+    background: border-box;
+    background-image: repeating-linear-gradient(45deg, #1536ca, #0481bb);
+    background-image: -moz-repeating-linear-gradient(45deg, #1536ca, #0481bb);
+    background-image: -o-repeating-linear-gradient(45deg, #1536ca, #0481bb);
+    width: 100%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-bottom: 7px;
+    border-radius: 5px;
+}
+
+h1{
+    margin: auto;
+    font-family: Arial;
+    font-size: 25pt;
+    font-style: normal;
+    text-transform: none;
+    color: white;
+    padding-left: 13px;
+} 
+
+#botones{
+    width: fit-content;
+    width: -moz-fit-content;
+    margin: auto;
+}
+
+button{
+    outline: none;
+    padding: 15px;
+    padding-top: 17px;
+    transition: all 0.4s;
+    background-image: repeating-linear-gradient(45deg, #1536ca, #0481bb);
+    background-image: -moz-repeating-linear-gradient(45deg, #1536ca, #0481bb);
+    background-image: -o-repeating-linear-gradient(45deg, #1536ca, #0481bb);
+    color: white;
+    font-weight: bold;
+    font-family: Arial;
+    font-style: normal;
+    text-transform: none;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#botones button:after{
+    content: "";
+    position: relative;
+    top: 0;
+    display: block;
+    height: 1px;
+    width: 0;
+    background-color: #ffffff;
+    transition: all 0.4s;
+}
+
+#botones button:hover:after{
+    width: 100%;
+}
+
+#inputs button{
+    margin-left: auto;
+    font-size: 23pt;
+    padding: 0px 18px 0px 18px;
+}
+
+#inputs button:hover{
+    color: red;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+#inputs{
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#inputs input{
+    border-style: none;
+    border-bottom-style: solid;
+    border-color: #0481bb;
+    border-width: 3px;
+    outline: none;
+    background-color: transparent;
+    padding: 5px;
+    margin-top: 7px;
+    font-size: 15pt;
+    font-family: Arial;
+    font-style: normal;
+    text-align: center;
+    width: 110pt;
+}
+
+#inputs input:nth-child(1){
+    border-bottom-left-radius: 7px;
+    border-left-style: solid;
+    border-left-color: #0481bb;
+}
+
+#inputs input:nth-child(2){
+    margin-left: 7px;
+}
+
+#contenedor{
+    position: absolute;
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#resultado{
+    width: fit-content;
+    width: -moz-fit-content;
+    width: -o-fit-content;
+    margin: auto;
+}
+
+#resultado h2{
+    font-family: Arial;
+    font-size: 50pt;
+    font-style: normal;
+    margin-top: 20px;
+    background-image: repeating-linear-gradient(45deg, #1536ca, #0481bb);
+    background-image: -moz-repeating-linear-gradient(45deg, #1536ca, #0481bb);
+    background-image: -o-repeating-linear-gradient(45deg, #1536ca, #0481bb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}

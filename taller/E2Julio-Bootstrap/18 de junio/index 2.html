@@ -1,0 +1,118 @@
+
+    <head>
+        <script src="jquery-3.6.0.js"></script>
+    </head>
+
+ <div id="contenedor">
+        <div id="ingresarNumeros">
+            <p>Introduzca un numero</p>
+        
+            <input id="num1" type="number">
+            
+            <p>Introduzca otro numero</p>
+            
+            <input id="num2" type="number">
+        
+        </div>
+        
+        
+        <div id="botones" style="padding-top: 20px;"> 
+        
+            <button  onclick="sum()" style="background-color: darkslategrey; color: floralwhite; padding: 7px; border-radius: 5px;">SUMAR</button>
+            <button  onclick="res()" style="background-color: darkslategrey; color: floralwhite; padding: 7px; border-radius: 5px;">RESTAR</button>
+            <button  onclick="div()" style="background-color: darkslategrey; color: floralwhite; padding: 7px; border-radius: 5px;">DIVIDIR</button>
+            <button  onclick="mul()" style="background-color: darkslategrey; color: floralwhite; padding: 7px; border-radius: 5px;">MULTIPLICAR</button>
+        
+        </div>
+
+        <h id="resultado" style="font-size: 70px; color: darkslategrey;"></h>
+    </div>
+
+    <script>
+
+        
+
+        function sum(){
+            var total=parseFloat($('#num1').val()) + parseFloat($('#num2').val());
+            $("#resultado").text(total);
+        }
+
+
+        function res(){
+
+            var total=parseFloat($('#num1').val()) - parseFloat($('#num2').val());
+            $("#resultado").text(total);
+
+        }
+
+
+        function div(){
+
+            var total=parseFloat($('#num1').val()) / parseFloat($('#num2').val());
+            $("#resultado").text(total);
+
+        }
+        
+        function mul(){
+
+            var total=parseFloat($('#num1').val()) * parseFloat($('#num2').val());
+            $("#resultado").text(total);
+
+        }
+
+        
+
+    </script>
+
+  <style>
+        p{
+            font-family: system-ui
+        }
+
+        #contenedor{
+            width: 100%;
+            height: 100%;
+            display: inline-grid;
+            justify-content: center;
+            align-items: center;
+            grid-auto-rows: max-content;
+        }
+
+        #ingresarNumeros{
+            width: fit-content;
+            margin: auto;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+
+        #ingresarNumeros input{
+            border-style: none;
+            padding: 5px;
+            background-color: #e4e4e4 !important;
+            border-bottom-style: solid;
+            outline-style: none;
+            width: 98%;
+        }
+
+        #ingresarNumeros p{
+            width: fit-content;
+            margin: auto;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        #botones{
+            width: fit-content;
+            margin: auto;
+        }
+
+        #resultado{
+            width: fit-content;
+            margin: auto;
+            margin-top: 20px;
+        }
+    </style>
+    
+    
+
+

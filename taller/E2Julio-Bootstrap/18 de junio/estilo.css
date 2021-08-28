@@ -1,0 +1,44 @@
+#nombre, #apellido, #edad{
+    border-style: none;
+    padding: 5px;
+    background-color: #e4e4e4 !important;
+    border-bottom-style: solid;
+    outline-style: none;
+    width: 98%;
+} 
+
+#contenedor{
+    width: 100%;
+    height: 100%;
+    display: inline-grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedorInputs{
+    margin: auto;
+}
+
+#contenedorInputs p{
+    width: fit-content;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+p{
+    color: black;
+    font-family: system-ui;
+}
+
+#botonMostrar{
+    margin: auto;
+    border-style: none;
+    outline-style: none;
+    font-family: system-ui;
+    padding: 15px;
+    cursor: pointer;
+}
+
+#botonMostrar:hover{
+    background-color: aliceblue;
+}
