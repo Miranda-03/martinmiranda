@@ -4,8 +4,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.util.ArrayList;
-import java.util.HashMap;
 
 public class Main {
     public static void main(String[] args) {
@@ -23,26 +21,27 @@ public class Main {
 
 
 
+
         JLabel TituloCubo = new JLabel();
         TituloCubo.setText("Inserte Base");
         TituloCubo.setSize(250, 25);
 
         JTextField insertCubo = new JTextField();
         insertCubo.setSize(100,25);
-        insertCubo.setLocation((ventanaArea.getWidth() / 2) - (insertCubo.getWidth() / 2), (ventanaArea.getHeight() / 2) - (insertCubo.getHeight() / 2) - 30);
+        insertCubo.setLocation(50 , 30);
 
         JTextField insertAltura = new JTextField();
         insertAltura.setSize(100,25);
-        insertAltura.setLocation((ventanaArea.getWidth() / 2) - (insertCubo.getWidth() / 2), (ventanaArea.getHeight() / 2) - (insertCubo.getHeight() / 2));
+        insertAltura.setLocation(50, 60);
 
 
         JPanel panelTitulo = new JPanel();
 
 
-        JLabel titulo = new JLabel();;
+        JLabel titulo = new JLabel();
         titulo.setText("Cálculo de áreas");
-        titulo.setSize(titulo.getWidth(), 25);
-        //titulo.setLocation((800 / 2 ) - (titulo.getWidth() / 2), 0);
+        titulo.setSize(40, 25);
+        titulo.setLocation(2  , 10);
 
         panelTitulo.add(titulo);
 
@@ -73,21 +72,17 @@ public class Main {
         TituloCubo.setLocation(10, 10);
 
         JPanel panelGeneral= new JPanel();
-        panelGeneral.setSize(400, 300);
-        panelGeneral.setName("general");
-        panelGeneral.setLocation(0, 0);
-        panelGeneral.add(TituloCubo);
-        panelGeneral.add(insertCubo);
-        panelGeneral.add(respuesta);
-        panelGeneral.add(botonRespuesta);
+        // panelGeneral.setSize(400, 300);
+        ventanaArea.setName("general");
+        // panelGeneral.setLocation(0, 0);
+        ventanaArea.add(TituloCubo);
+        ventanaArea.add(insertCubo);
+        ventanaArea.add(respuesta);
+        ventanaArea.add(botonRespuesta);
 
         JPanel panelTriangulo= new JPanel();
-        panelTriangulo.setName("triangulo");
-        panelTriangulo.add(TituloCubo);
-        panelTriangulo.add(insertCubo);
-        panelTriangulo.add(insertAltura);
-        panelTriangulo.add(respuesta);
-        panelTriangulo.add(botonRespuesta);
+
+
 
 
         panelSuperior.add(boton1);
@@ -108,10 +103,10 @@ public class Main {
                     @Override
                     public void mouseClicked(MouseEvent e) {
                         TituloCubo.setText("ingrese area cubo");
-                        ventanaArea.remove(ventanaArea.getComponent(0));
 
-                       // ventanaArea.remove(panelTriangulo);
-                        ventanaArea.add(panelGeneral);
+
+                        // ventanaArea.remove(panelTriangulo);
+
                         ventanaArea.setVisible(true);
                         opcion[0] = "cubo";
 
@@ -127,8 +122,8 @@ public class Main {
                     public void mouseClicked(MouseEvent e) {
 
                         TituloCubo.setText("ingrese area del circulo");
-                        ventanaArea.remove(panelTriangulo);
-                        ventanaArea.add(panelGeneral);
+
+
                         ventanaArea.setVisible(true);
                         opcion[0] = "circulo";
 
@@ -142,8 +137,7 @@ public class Main {
                     @Override
                     public void mouseClicked(MouseEvent e) {
                         TituloCubo.setText("ingrese area de la esfera");
-                        ventanaArea.remove(panelTriangulo);
-                        ventanaArea.add(panelGeneral);
+
                         ventanaArea.setVisible(true);
                         opcion[0] = "esfera";
 
@@ -158,8 +152,8 @@ public class Main {
                     @Override
                     public void mouseClicked(MouseEvent e) {
                         TituloCubo.setText("ingrese base y altura del triangulo");
-                        ventanaArea.remove(panelGeneral);
-                        ventanaArea.add(panelTriangulo);
+
+                        ventanaArea.add(insertAltura);
                         ventanaArea.setVisible(true);
                         opcion[0] = "triangulo";
 
@@ -173,8 +167,8 @@ public class Main {
                     @Override
                     public void mouseClicked(MouseEvent e) {
                         TituloCubo.setText("ingrese lado del cuadrado");
-                        ventanaArea.remove(panelTriangulo);
-                        ventanaArea.add(panelGeneral);
+
+
                         ventanaArea.setVisible(true);
                         opcion[0] = "cuadrado";
 
@@ -219,7 +213,6 @@ public class Main {
                             Integer numResolv = (int) Area.Cuadrado(num);
                             respuesta.setText(String.valueOf(numResolv));
                         }
-                        opcion[0] = "";
                     }
                 });
         /*
