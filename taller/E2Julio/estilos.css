@@ -22,10 +22,14 @@ span{
     top: 0;
     left: 0;
     transition:  1.5s;
-    background: repeating-linear-gradient(45deg, #1a63ab66, #00000000 450px);
+    background-color: #0d0d0d;
+    background-image: 
+    radial-gradient(at 47% 33%, hsl(131deg 100% 36%) 0, transparent 59%), 
+    radial-gradient(at 121% 115%, hsl(203deg 100% 35%) 0, transparent 55%);
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    z-index: -1;
 }
 
 #color:before{
@@ -73,7 +77,9 @@ h1{
     height: 170px;
     position: relative;
     box-shadow: 0px -6px 20px 1px black;
-    background: linear-gradient(45deg, #0000009e, #3a3a3adb 60%);
+    backdrop-filter: blur(16px) saturate(200%);
+    -webkit-backdrop-filter: blur(16px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.75);
 }
 
 #principio:after{
@@ -127,8 +133,9 @@ h1{
 }
 
 #trabajos{
-    width: 100%;
-   position: absolute;
+    width: fit-content;
+    margin: auto;
+  
 }
 
 #listado{
@@ -180,12 +187,14 @@ h1{
     display: block;
     margin: auto;
     margin-bottom: 70px;
-    background-color: rgb(58 58 58 / 87%);
+    backdrop-filter: blur(16px) saturate(200%);
+    -webkit-backdrop-filter: blur(16px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.75);
     padding: 93px;
     padding-top: 39px;
     padding-bottom: 39px;
     border-radius: 5px;
-    box-shadow: 0px 0px 20px 1px black;
+    z-index: -1;
 }
 
 #ejercicio{
@@ -203,7 +212,6 @@ h1{
     border-style: none;
     width: 100%;
     height: 170px;
-    background-color: #383b3b;
     border-radius: 5px;
 }
 
@@ -211,7 +219,7 @@ h1{
 
 #boton{
     border-style: none;
-    background-color: rgb(58, 58, 58);
+    background-color: #1f1f1fdb;
     cursor: pointer;
     padding: 30px;
     color: white;
@@ -237,36 +245,120 @@ h1{
 }
 
 #opciones, #opciones18Junio{
-    position: absolute;
-    display: none;
-    margin-top: 80px;
-    margin-left: -124px;
-    border-style: solid;
-    border-color: #424242;
-    border-width: 2px;
-    border-radius: 5px;
-    border-top-left-radius: 0;
-    box-shadow: 0px 0px 20px 1px black;
+    display: none;  
     opacity: 0;
     transition: all 1s;
+    margin-left: -8px;
 }
 
-#opciones:after, #opciones18Junio:after{
-    content: "";
-    display: block;
+
+
+nav{
+    width: 130px;
+    background-color: #1f1f1fdb;
+}
+
+label{
+    font-family: Arial;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    background-color: #0000009e;
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    user-select: none;
+}
+
+
+
+
+#listaEjercicios{
+    background-color: #031016;
+    color: white;
+    list-style: none;
+    padding: 0;
+    width: 200px;
+    border: rgb(65, 65, 65) solid 1px;
+    border-radius: 5px;
+    margin-top: 6px;
+    margin-left: 1px;
+}
+
+
+#cosas{
+    overflow: hidden;
     position: absolute;
-    width: 15px;
-    height: 15px;
-    background-color: rgb(58, 58, 58);
-    transform: translate(-50%) rotate(-315deg);
-    left: 20px;
-    top: -5px;
-    border-style: solid;
-    border-color: #424242;
-    border-width: 2px;
+    width: fit-content;
+    height: 0;
+    transition: all .3s cubic-bezier(0.1, 0.1, 0.4, 0.43);
+    z-index: 1;
+}
+
+#boton{
+    background-color: transparent;
+    height: fit-content;
+    width: 100%;
+    padding: 0;
+    font-size: 23px;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#listaEjercicios li{
+    background-color: transparent;
+    cursor: pointer;
+   
+}
+
+#listaEjercicios li:hover{
+    background-color: #323537e6;
+}
+
+#arrow{
+    position: relative;
+    display: block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: rgb(255, 255, 255) ;
+    clip-path: polygon(50% 80%, 0 20%, 100% 20%);
+  margin-top: 14px;
+    margin-left: 10px;
+    transition: all .5s;
+}
+
+.input-btn{
+    display: none;
 }
 
 
 
 
+#listaContenedor{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  ;
+}
+
+#listaContenedor div{
+    margin-right: 25px;
+}
+
+
+#silla{
+    position: fixed;
+    top: 90%;
+    left: 95%;
+    z-index: 2;
+    width: 60px
+}
+
+[id="input-silla"]:checked + #silla{
+    transform: rotate(180deg);
+}
 
