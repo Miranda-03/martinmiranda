@@ -3,13 +3,33 @@
         <title>Miranda - Ejercicios</title>
         <link rel="icon" type="image/xcf" href="recursos/mw.png">
         <link rel="stylesheet" type="text/css" href="estilos.css">
-        <script type="text/javascript" src="script.js"></script>
+        
         <meta charset = "utf-8">
     </head>
 
     <body>
     <div id="color">
+        <svg width="2629" height="1445" viewBox="0 0 2629 1445" fill="none">
+            <path d="M2629 0H0V1445H2629V0Z" fill="url(#paint0_linear)"/>
+            <path d="M0 1445V0H2629L0 1445Z" fill="url(#paint1_linear)" fill-opacity="0.87"/>
+            <path d="M2629 1445V0H0L2629 1445Z" fill="url(#paint2_linear)" fill-opacity="0.87"/>
+            <defs>
+            <linearGradient id="paint0_linear" x1="1445.5" y1="181.045" x2="153.418" y2="-90.3167" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#0EBCC2"/>
+            <stop offset="1" stop-color="#05C1FF"/>
+            </linearGradient>
+            <linearGradient id="paint1_linear" x1="401.047" y1="1704.69" x2="1599.31" y2="1100.47" gradientUnits="userSpaceOnUse">
+            <stop stop-opacity="0"/>
+            <stop offset="1"/>
+            </linearGradient>
+            <linearGradient id="paint2_linear" x1="-44.2464" y1="1392.84" x2="2986.74" y2="-1004" gradientUnits="userSpaceOnUse">
+            <stop stop-opacity="0"/>
+            <stop offset="1"/>
+            </linearGradient>
+            </defs>
+            </svg>
     </div>
+
         <div id="principio">
             <h1>Martín Miranda
             </h1>
@@ -25,7 +45,7 @@
                    <span id="arrow"></span>
                 </label>
                 
-                <input type="checkbox" id="m-btn" class="input-btn" onchange="check()">
+                <input type="checkbox" id="m-btn" class="input-btn" onchange="check(0)">
                 
                 <div id="cosas">
                 <ul id="listaEjercicios" class="lista-btn">
@@ -40,12 +60,20 @@
                 <label for="m-btn-2" class="boton">Abril
                     <span id="arrow"></span>
                 </label>
-                <input type="checkbox" id="m-btn-2" class="input-btn" onchange="check()">
+                <input type="checkbox" id="m-btn-2" class="input-btn" onchange="check(1)">
                 <div id="cosas">
                 <ul id="listaEjercicios" class="lista-btn">
                     <li><input id="boton" type="button" value="9 de abril" onclick="cambiarHTML('9Abril/index9abril.html', 'recursos/9Abril.html', '9 de abril')"></li> <!-- 9 de abril-->
-                    <li><input id="boton" type="button" value="30 de abril" onclick="cambiarHTML('30Abril/E30Abril.html', 'recursos/30Abril.html', '30 de abril')"></li>
-                        <li><input id="boton" type="button" value="16 de abril" onclick="mostrarOpciones('16 de abril')">
+                    <li><input id="boton" type="button" value="30 de abril" onclick="cambiarHTML('30Abril/E30Abril.html', 'recursos/30Abril.html', '30 de abril')"></li> <!-- 30 de abril-->
+                        <li><input id="boton" type="button" value="16 de abril">
+                            <div class="flecha-opciones">
+                                <svg class="icon icon-tabler icon-tabler-arrows-left-down" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M7 3l-4 4l4 4" />
+                                    <path d="M3 7h11a3 3 0 0 1 3 3v11" />
+                                    <path d="M13 17l4 4l4 -4" />
+                                  </svg>
+                            </div>
                             <div id="opciones">
                                 <input id="boton" type="button" value="opcion 1" onclick=" cambiarHTML('16Abril/index16abril.html', 'recursos/16Abril.html', '16 de abril')">
                                 <input id="boton" type="button" value="opcion 2" onclick=" cambiarHTML('16Abril/index16-2do.html', 'recursos/16Abril.html', '16 de abril')">
@@ -60,7 +88,7 @@
                 <label for="m-btn-3" class="boton">Mayo
                     <span id="arrow"></span>
                 </label>
-                <input type="checkbox" id="m-btn-3" class="input-btn" onchange="check()">
+                <input type="checkbox" id="m-btn-3" class="input-btn" onchange="check(2)">
                 <div id="cosas">
                 <ul id="listaEjercicios" class="lista-btn">
                     <li><input id="boton" type="button" value="14 de mayo" onclick="cambiarHTML('14Mayo/E30Abril.html', 'recursos/14Mayo.html', '14 de mayo')"></li> <!-- 14 de mayo-->
@@ -72,13 +100,21 @@
                 <label for="m-btn-4" class="boton">Junio
                     <span id="arrow"></span>
                 </label>
-                <input type="checkbox" id="m-btn-4" class="input-btn" onchange="check()">
+                <input type="checkbox" id="m-btn-4" class="input-btn" onchange="check(3)">
                 <div id="cosas">
                 <ul id="listaEjercicios" class="lista-btn">
                     <li><input id="boton" type="button" value="4 de junio" onclick="cambiarHTML('4Junio/E4junio.html', 'recursos/4Junio.html', '4 de junio')"></li> <!-- 4 de junio-->
                     
                     <li><input id="boton" type="button" value="25 de junio" onclick="cambiarHTML('25Junio/E4junio.html', 'recursos/25Junio.html', '25 de junio')"></li> <!-- 25 de junio-->
-                    <li><input id="boton" type="button" value="18 de junio" onclick="mostrarOpciones('18 de junio')">
+                    <li><input id="boton" type="button" value="18 de junio" >
+                        <div class="flecha-opciones">
+                            <svg class="icon icon-tabler icon-tabler-arrows-left-down" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M7 3l-4 4l4 4" />
+                                <path d="M3 7h11a3 3 0 0 1 3 3v11" />
+                                <path d="M13 17l4 4l4 -4" />
+                              </svg>
+                        </div>
                         <div id="opciones18Junio">
                             <input id="boton" type="button" value="opcion 1" onclick=" cambiarHTML('18Junio/index19.html', 'recursos/18Junio.html', '18 de junio')">
                             <input id="boton" type="button" value="opcion 2" onclick=" cambiarHTML('18Junio/index26.html', 'recursos/18Junio.html', '18 de junio')">
@@ -92,64 +128,30 @@
                 <label for="m-btn-5" class="boton">Agosto
                     <span id="arrow"></span>
                 </label>
-                <input type="checkbox" id="m-btn-5" class="input-btn" onchange="check()">
+                <input type="checkbox" id="m-btn-5" class="input-btn" onchange="check(4)">
                 <div id="cosas">
                 <ul id="listaEjercicios" class="lista-btn">
-                    <li><input id="boton" type="button" value="20 de agosto" onclick="cambiarHTML('20Agosto/index.html', 'recursos/20Agosto.html', '20 de agosto')"></li> <!-- 4 de junio-->
-                    
-                    
+                    <li><input id="boton" type="button" value="20 de agosto" onclick="cambiarHTML('20Agosto/index.html', 'recursos/20Agosto.html', '20 de agosto')"></li> <!-- 4 de junio-->                 
                 </ul>
                 </div>
             </div>
-
             
         </div>
-        
-        
-
 
         <div id="trabajos">
-
-            <!--
-            
-            <ul id="listado">
-                <li><input id="boton" type="button" value="19 de marzo" onclick="cambiarHTML('19Marzo/index2.html', 'recursos/19Marzo.html', '19 de marzo')"></li> <!-- 19 de marzo
-                <li><input id="boton" type="button" value="26 de marzo" onclick="cambiarHTML('26Marzo/index26.html', 'recursos/26Marzo.html', '26 de marzo')"></li> <!-- 26 de marzo
-                <li><input id="boton" type="button" value="9 de abril" onclick="cambiarHTML('9Abril/index9abril.html', 'recursos/9Abril.html', '9 de abril')"></li> <!-- 9 de abril
-                <li><input id="boton" type="button" value="16 de abril" onclick="mostrarOpciones('16 de abril')">
-                    <div id="opciones">
-                        <input id="boton" type="button" value="opcion 1" onclick=" cambiarHTML('16Abril/index16abril.html', 'recursos/16Abril.html', '16 de abril')">
-                        <input id="boton" type="button" value="opcion 2" onclick=" cambiarHTML('16Abril/index16-2do.html', 'recursos/16Abril.html', '16 de abril')">
-                    </div>
-                </li> <!-- 16 de abril
-                <li><input id="boton" type="button" value="30 de abril" onclick="cambiarHTML('30Abril/E30Abril.html', 'recursos/30Abril.html', '30 de abril')"></li> <!-- 30 de abril
-                <li><input id="boton" type="button" value="14 de mayo" onclick="cambiarHTML('14Mayo/E30Abril.html', 'recursos/14Mayo.html', '14 de mayo')"></li> <!-- 14 de mayo
-                <li><input id="boton" type="button" value="4 de junio" onclick="cambiarHTML('4Junio/E4junio.html', 'recursos/4Junio.html', '4 de junio')"></li> <!-- 4 de junio
-                <li><input id="boton" type="button" value="18 de junio" onclick="mostrarOpciones('18 de junio')">
-                    <div id="opciones18Junio">
-                        <input id="boton" type="button" value="opcion 1" onclick=" cambiarHTML('18Junio/index19.html', 'recursos/18Junio.html', '18 de junio')">
-                        <input id="boton" type="button" value="opcion 2" onclick=" cambiarHTML('18Junio/index26.html', 'recursos/18Junio.html', '18 de junio')">
-                    </div>
-                </li> <!-- 18 de junio
-                <li><input id="boton" type="button" value="25 de junio" onclick="cambiarHTML('25Junio/E4junio.html', 'recursos/25Junio.html', '25 de junio')"></li> <!-- 25 de junio
-            </ul>
-
-           -->
-
-
-
             <div id="contenido">
                 <iframe id="enunciado"  src="recursos/19Marzo.html"></iframe>
                 <iframe id="ejercicio"  src="19Marzo/index2.html"></iframe>
             </div>
-
-
-            
         </div>
 
 
+        <label id="label-silla" for="input-silla"><input type="checkbox" id="input-silla" style="display: none;"><img id="silla" src="recursos/chair_s.png"></label>
+        
 
-        <script type="text/javascript" src="recursos/vanilla-tilt.min.js"></script>
+    </body>
+
+    <script type="text/javascript" src="recursos/vanilla-tilt.min.js"></script>
         <script>
             VanillaTilt.init(document.querySelector("#principio img"), {
                 max: 25,
@@ -157,10 +159,6 @@
             });
         </script>
 
-
-        <label id="label-silla" for="input-silla"><input type="checkbox" id="input-silla" style="display: none;"><img id="silla" src="recursos/chair_s.png"></label>
-        
-
-    </body>
+<script type="text/javascript" src="script.js"></script>
 
 </html>

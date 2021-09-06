@@ -1,7 +1,5 @@
 body{
     margin: 0;
-    background-image: url(recursos/fondo.png);
-    background-position: top;
 }
 
 span{
@@ -13,7 +11,7 @@ span{
     transition: all ease-out 0.5s;
 }
 
-#color{
+/*#color{
     height: 100%;
     width: 100%;
     height: -webkit-fill-available;
@@ -22,21 +20,38 @@ span{
     top: 0;
     left: 0;
     transition:  1.5s;
-    background-color: #0d0d0d;
-    background-image: 
-    radial-gradient(at 47% 33%, hsl(131deg 100% 36%) 0, transparent 59%), 
-    radial-gradient(at 121% 115%, hsl(203deg 100% 35%) 0, transparent 55%);
+   background-color: #0EBCC2;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(103,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%230EBCC2'/%3E%3Cstop offset='1' stop-color='%2305C1FF'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1' gradientTransform='rotate(241,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23000000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2' gradientTransform='rotate(274,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23000000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.87'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     z-index: -1;
+}*/
+
+#color{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#color svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #color:before{
     content: "";
-    position: absolute;
-    margin-left: -91%;
-    margin-top: 30%;
+    position: fixed;
+    top: 5%;
+    left: 85%;
+    z-index: 1;
     width: 15rem;
     height: 15rem;
     border-radius: 50%;
@@ -48,9 +63,9 @@ span{
 
 #color:after{
     content: "";
-    position: absolute;
-    margin-right: -91%;
-    margin-bottom: 30%;
+    position: fixed;
+    top: 75%;
+    left: 2%;
     width: 15rem;
     height: 15rem;
     border-radius: 50%;
@@ -77,22 +92,10 @@ h1{
     height: 170px;
     position: relative;
     box-shadow: 0px -6px 20px 1px black;
-    backdrop-filter: blur(16px) saturate(200%);
-    -webkit-backdrop-filter: blur(16px) saturate(200%);
     background-color: rgba(17, 25, 40, 0.75);
 }
 
-#principio:after{
-    content: "";
-    display: block;
-    position: absolute;
-    margin-top: 156px;
-    margin-left: 13.1%;
-    width: 0px;
-    height: 5px;
-    background-image: linear-gradient(45deg, #27c5f5, #5af067, #27c5f5);
-    transition: all 1s;
-}
+
 
 #principio h1{
     margin-top: 80px;
@@ -107,14 +110,6 @@ h1{
     transition: all 1s;
 }
 
-
-#principio:hover:after{
-    width: 165px;
-}
-
-#principio:hover h1{
-    background-position-x: 350px;
-}
 
 #principio h2{
     margin-top: 125px;
@@ -134,61 +129,17 @@ h1{
 
 #trabajos{
     width: fit-content;
+    width: -moz-fit-content;
     margin: auto;
   
 }
 
-#listado{
-    list-style: none;
-    padding: 0;
-    margin: auto;
-    width: max-content;
-    margin-top: 147px;
-    margin-bottom: 250px;
-    border-radius: 5px;
-}
-
-#listado li{
-    float: left;
-    border-left-style: solid;
-    border-left-width: 2px;
-    border-color: rgba(66, 66, 66);
-    outline-style: none;
-}
-
-#listado li:first-child{
-    border-style: none;
-}
-
-#boton{
-    outline-style: none;
-}
-
-#listado li:first-child #boton{
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-    border-bottom-style: solid;
-    border-bottom-width: 5px;
-    border-bottom-color: #929292;
-}
-
-#listado li:last-child #boton{
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-#listado li input:hover{
-    background-color: #424242;
-    outline-style: none;
-}
 
 #contenido{
     width: 954px;
     display: block;
     margin: auto;
     margin-bottom: 70px;
-    backdrop-filter: blur(16px) saturate(200%);
-    -webkit-backdrop-filter: blur(16px) saturate(200%);
     background-color: rgba(17, 25, 40, 0.75);
     padding: 93px;
     padding-top: 39px;
@@ -213,44 +164,6 @@ h1{
     width: 100%;
     height: 170px;
 }
-
-
-
-#boton{
-    border-style: none;
-    background-color: #1f1f1fdb;
-    cursor: pointer;
-    padding: 30px;
-    color: white;
-    transition: all 0s cubic-bezier(0.4, 0, 1, 1) 0s;
-    z-index: 2;
-    outline-style: none ;
-}
-
-#listado li:after{
-    content: "";
-    display: block;
-    position: relative;
-    height: 3px;
-    background-image: linear-gradient(45deg, #59acff, #0080ff, #59acff);
-    width: 0;
-    margin: auto;
-    transition: all 0.7s;
-    animation: color 15s ease infinite;
-}
-
-#listado li:hover:after{
-    width: 100%;
-}
-
-#opciones, #opciones18Junio{
-    display: none;  
-    opacity: 0;
-    transition: all 1s;
-    margin-left: -8px;
-}
-
-
 
 nav{
     width: 130px;
@@ -295,6 +208,14 @@ label{
 }
 
 #boton{
+    border-style: none;
+    background-color: #1f1f1fdb;
+    cursor: pointer;
+    padding: 30px;
+    color: white;
+    transition: all 0s cubic-bezier(0.4, 0, 1, 1) 0s;
+    z-index: 2;
+    outline-style: none ;
     background-color: transparent;
     height: fit-content;
     width: 100%;
@@ -306,14 +227,14 @@ label{
     padding-bottom: 10px;
 }
 
+#boton:hover{
+        background-color: #323537e6;
+}
+
 #listaEjercicios li{
     background-color: transparent;
     cursor: pointer;
    
-}
-
-#listaEjercicios li:hover{
-    background-color: #323537e6;
 }
 
 #arrow{
@@ -332,8 +253,6 @@ label{
 .input-btn{
     display: none;
 }
-
-
 
 
 #listaContenedor{
@@ -358,7 +277,19 @@ label{
     transition: all .2s
 }
 
+#label-silla{
+    background-color: transparent;
+}
+
 [id="input-silla"]:checked + #silla{
     transform: rotate(180deg);
 }
 
+
+.flecha-opciones{
+    position: absolute;
+    width: fit-content;
+    margin-left: 118px;
+    top: 107px;
+    transform: scale(0.5);
+}
