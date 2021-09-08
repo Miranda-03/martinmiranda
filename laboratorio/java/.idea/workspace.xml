@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdd4b05d-8d3d-4c0b-92b2-5b03ce00588b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/E18Agosto/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/E18Agosto/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../taller/E2Julio-Bootstrap/recursos/4 de junio.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../taller/E2Julio-Bootstrap/recursos/4 de junio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../taller/E2Julio/estilos.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../taller/E2Julio/estilos.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../taller/E2Julio/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../taller/E2Julio/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../taller/E2Julio/recursos/4Junio.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../taller/E2Julio/recursos/4Junio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../taller/E2Julio/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../taller/E2Julio/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
