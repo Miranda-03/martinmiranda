@@ -33,6 +33,18 @@ public class Main{
             ventana.dispose();
         });
 
+        JPanel panelPuntaje = new JPanel();
+        panelPuntaje.setVisible(false);
+        panelPuntaje.setSize(80, 80);
+        panelPuntaje.setLocation(170, 170);
+        JLabel puntaje1 = new JLabel();
+        JLabel puntaje2 = new JLabel();
+        panelPuntaje.add(puntaje1);
+        panelPuntaje.add(puntaje2);
+
+
+
+
 
         JLabel panelBotones = new JLabel();
         panelBotones.setLayout(new GridLayout(3,3));
@@ -99,11 +111,18 @@ public class Main{
         panelBotones.add(boton8);
         panelBotones.add(boton9);
 
+        ventana.add(panelPuntaje);
         ventana.add(panelBotones,BorderLayout.CENTER);
         ventana.setVisible(true);
 
         AtomicInteger puntajeX= new AtomicInteger();
         AtomicInteger puntajeO= new AtomicInteger();
+
+        cargarResultado.addActionListener(e ->{
+            puntaje1.setText(String.valueOf(puntajeX.get()));
+            puntaje2.setText(String.valueOf(puntajeO.get()));
+            panelPuntaje.setVisible(true);
+        });
 
         final boolean[] turno = {false};
         int numeroTurnos = 9;

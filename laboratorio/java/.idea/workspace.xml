@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdd4b05d-8d3d-4c0b-92b2-5b03ce00588b" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/company/E13Septiembre/Pasajero.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/company/E13Septiembre/Sistema.java" afterDir="false" />
@@ -66,6 +67,10 @@
       <change beforePath="$PROJECT_DIR$/out/production/java/com/company/ejercicio19abril.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/java/com/company/producto.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/java/com/company/producto2.class" beforeDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/E23Agosto/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/E23Agosto/Main.java" afterDir="false" />
+>>>>>>> 08993a19a4cf3d07a10ebd60b14107f9150fcc67
       <change beforePath="$PROJECT_DIR$/src/com/company/EjercicioPractica/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/EjercicioPractica/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,11 +110,14 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
+<<<<<<< HEAD
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/com/company/E13Septiembre" />
     </key>
   </component>
+=======
+>>>>>>> 08993a19a4cf3d07a10ebd60b14107f9150fcc67
   <component name="RunManager" selected="Application.Main (1)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.E23Agosto.Main" />
