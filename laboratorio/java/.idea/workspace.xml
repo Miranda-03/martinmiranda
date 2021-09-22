@@ -50,58 +50,100 @@
       <recent name="$PROJECT_DIR$/src/com/company/E13Septiembre" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HashSet_eje">
-    <configuration name="HashSet_eje" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.HashSet_eje" />
+  <component name="RunManager" selected="JUnit.TestSistema.pasajerosConUltimoMontoAbonado">
+    <configuration name="TestSistema.pasajerosConUltimoMontoAbonado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.*" />
+          <option name="PATTERN" value="com.company.E13Septiembre.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.company.E13Septiembre" />
+      <option name="MAIN_CLASS_NAME" value="com.company.E13Septiembre.TestSistema" />
+      <option name="METHOD_NAME" value="pasajerosConUltimoMontoAbonado" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.E23Agosto.Main" />
+    <configuration name="TestSistema.pasajerosQueSeHanSubidoAlgunaVez" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.E23Agosto.*" />
+          <option name="PATTERN" value="com.company.E13Septiembre.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.company.E13Septiembre" />
+      <option name="MAIN_CLASS_NAME" value="com.company.E13Septiembre.TestSistema" />
+      <option name="METHOD_NAME" value="pasajerosQueSeHanSubidoAlgunaVez" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.E18Agosto.Main" />
+    <configuration name="TestTarjeta" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.E18Agosto.*" />
+          <option name="PATTERN" value="com.company.E13Septiembre.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.company.E13Septiembre" />
+      <option name="MAIN_CLASS_NAME" value="com.company.E13Septiembre.TestTarjeta" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestTarjeta.cargarSube" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.E13Septiembre.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.E13Septiembre" />
+      <option name="MAIN_CLASS_NAME" value="com.company.E13Septiembre.TestTarjeta" />
+      <option name="METHOD_NAME" value="cargarSube" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestTarjeta.ultimoMontoAbonado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.E13Septiembre.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.E13Septiembre" />
+      <option name="MAIN_CLASS_NAME" value="com.company.E13Septiembre.TestTarjeta" />
+      <option name="METHOD_NAME" value="ultimoMontoAbonado" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HashSet_eje" />
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.TestSistema.pasajerosConUltimoMontoAbonado" />
+        <item itemvalue="JUnit.TestSistema.pasajerosQueSeHanSubidoAlgunaVez" />
+        <item itemvalue="JUnit.TestTarjeta.ultimoMontoAbonado" />
+        <item itemvalue="JUnit.TestTarjeta.cargarSube" />
+        <item itemvalue="JUnit.TestTarjeta" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cdd4b05d-8d3d-4c0b-92b2-5b03ce00588b" name="Default Changelist" comment="" />
+      <changelist id="5ce63006-c20d-4ef1-a077-3d9f1ecc6fcd" name="Changes" comment="" />
       <created>1629894042660</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -120,5 +162,15 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
