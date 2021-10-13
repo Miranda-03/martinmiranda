@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5ce63006-c20d-4ef1-a077-3d9f1ecc6fcd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E13Septiembre/TestSistema.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E13Septiembre/TestSistema.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/E13Septiembre/TestSistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/E13Septiembre/TestSistema.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +52,20 @@
       <recent name="$PROJECT_DIR$/src/com/company/E13Septiembre" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestSistema.pasajerosConUltimoMontoAbonado">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.E4Octubre.Main" />
+      <module name="java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.E4Octubre.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestSistema.pasajerosConUltimoMontoAbonado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java" />
       <extension name="coverage">
@@ -79,21 +94,6 @@
       <option name="MAIN_CLASS_NAME" value="com.company.E13Septiembre.TestSistema" />
       <option name="METHOD_NAME" value="pasajerosQueSeHanSubidoAlgunaVez" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestTarjeta" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.E13Septiembre.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company.E13Septiembre" />
-      <option name="MAIN_CLASS_NAME" value="com.company.E13Septiembre.TestTarjeta" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -132,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.TestSistema.pasajerosConUltimoMontoAbonado" />
         <item itemvalue="JUnit.TestSistema.pasajerosQueSeHanSubidoAlgunaVez" />
         <item itemvalue="JUnit.TestTarjeta.ultimoMontoAbonado" />
         <item itemvalue="JUnit.TestTarjeta.cargarSube" />
-        <item itemvalue="JUnit.TestTarjeta" />
       </list>
     </recent_temporary>
   </component>
