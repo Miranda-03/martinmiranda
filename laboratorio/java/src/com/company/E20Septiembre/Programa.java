@@ -1,16 +1,19 @@
 package com.company.E20Septiembre;
 
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+
 public class Programa {
     private String nombre;
     private Integer numConductores;
     private String operador;
     private String categoria;
     private String musicalizador;
-    private String[] estilosMusica;
-    private String horaInicio;
-    private String horaFinal;
+    private ArrayList<String> estilosMusica;
+    private LocalDateTime horaInicio;
+    private LocalDateTime horaFinal;
 
-    public Programa(String nombre, Integer numConductores, String operador, String categoria, String horaInicio, String horaFinal) {
+    public Programa(String nombre, Integer numConductores, String operador, String categoria,  LocalDateTime horaInicio,  LocalDateTime horaFinal) {
         this.nombre = nombre;
         this.numConductores = numConductores;
         this.operador = operador;
@@ -19,7 +22,7 @@ public class Programa {
         this.horaFinal = horaFinal;
     }
 
-    public Programa(String nombre, Integer numConductores, String operador, String categoria, String musicalizador, String[] estilosMusica, String horaInicio, String horaFinal) {
+    public Programa(String nombre, Integer numConductores, String operador, String categoria, String musicalizador, ArrayList<String> estilosMusica,  LocalDateTime horaInicio,  LocalDateTime horaFinal) {
         this.nombre = nombre;
         this.numConductores = numConductores;
         this.operador = operador;
@@ -30,7 +33,9 @@ public class Programa {
         this.horaFinal = horaFinal;
     }
 
-    public Programa() {}
+    public Programa() {
+        estilosMusica = new ArrayList<>();
+    }
 
     public String getNombre() {
         return nombre;
@@ -72,27 +77,27 @@ public class Programa {
         this.musicalizador = musicalizador;
     }
 
-    public String[] getEstilosMusica() {
+    public ArrayList<String> getEstilosMusica() {
         return estilosMusica;
     }
 
-    public void setEstilosMusica(String[] estilosMusica) {
+    public void setEstilosMusica(ArrayList<String> estilosMusica) {
         this.estilosMusica = estilosMusica;
     }
 
-    public String getHoraInicio() {
+    public  LocalDateTime getHoraInicio() {
         return horaInicio;
     }
 
-    public void setHoraInicio(String horaInicio) {
+    public void setHoraInicio( LocalDateTime horaInicio) {
         this.horaInicio = horaInicio;
     }
 
-    public String getHoraFinal() {
+    public  LocalDateTime getHoraFinal() {
         return horaFinal;
     }
 
-    public void setHoraFinal(String horaFinal) {
+    public void setHoraFinal( LocalDateTime horaFinal) {
         this.horaFinal = horaFinal;
     }
 }
