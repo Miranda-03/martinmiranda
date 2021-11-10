@@ -5,9 +5,91 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ce63006-c20d-4ef1-a077-3d9f1ecc6fcd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Alumno.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/Alumno.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Area.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/Area.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Duenio.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/Duenio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E11Agosto/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E11Agosto/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E11Agosto/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E11Agosto/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E11Agosto/Persona.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E11Agosto/Persona.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E13Septiembre/Pasajero.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E13Septiembre/Pasajero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E13Septiembre/Sistema.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E13Septiembre/Sistema.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E13Septiembre/TarjetaEquis.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E13Septiembre/TarjetaEquis.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E13Septiembre/TestSistema.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E13Septiembre/TestSistema.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/E13Septiembre/TestSistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/E13Septiembre/TestSistema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E13Septiembre/TestTarjeta.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E13Septiembre/TestTarjeta.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E13Septiembre/Viaje.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E13Septiembre/Viaje.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E14Julio/Pasajero.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E14Julio/Pasajero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E14Julio/Sistema.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E14Julio/Sistema.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E14Julio/TarjetaEquis.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E14Julio/TarjetaEquis.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E14Julio/Viaje.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E14Julio/Viaje.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E18Agosto/Area.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E18Agosto/Area.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E18Agosto/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E18Agosto/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E18Agosto/Main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E18Agosto/Main$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E18Agosto/Main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E18Agosto/Main$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E18Agosto/Main$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E18Agosto/Main$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E18Agosto/Main$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E18Agosto/Main$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E18Agosto/Main$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E18Agosto/Main$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E18Agosto/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E18Agosto/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E23Agosto/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E23Agosto/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E27Septiembre/Producto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E27Septiembre/Producto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E27Septiembre/Tienda.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E27Septiembre/Tienda.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E4Octubre/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E4Octubre/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E5Julio/Alumno.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E5Julio/Alumno.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E5Julio/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E5Julio/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E5Julio/Pedidos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E5Julio/Pedidos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E5Julio/Persona.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E5Julio/Persona.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E5Julio/Platos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E5Julio/Platos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E5Julio/Profesor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E5Julio/Profesor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E5JulioACyBA/Agregar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E5JulioACyBA/Agregar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E5JulioACyBA/Alumno.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E5JulioACyBA/Alumno.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E5JulioACyBA/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E5JulioACyBA/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E5JulioACyBA/Modificar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E5JulioACyBA/Modificar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E5JulioACyBA/Pedidos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E5JulioACyBA/Pedidos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E5JulioACyBA/Persona.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E5JulioACyBA/Persona.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E5JulioACyBA/Platos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E5JulioACyBA/Platos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E5JulioACyBA/Profesor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E5JulioACyBA/Profesor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E9Agosto/Pasajero.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E9Agosto/Pasajero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E9Agosto/Sistema.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E9Agosto/Sistema.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E9Agosto/TarjetaEquis.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E9Agosto/TarjetaEquis.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/E9Agosto/Viaje.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/E9Agosto/Viaje.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Ej15Septiembre/Album.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/Ej15Septiembre/Album.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Ej15Septiembre/Artista.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/Ej15Septiembre/Artista.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Ej15Septiembre/Autor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/Ej15Septiembre/Autor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Ej15Septiembre/Cancion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/Ej15Septiembre/Cancion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Ej15Septiembre/Persona.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/Ej15Septiembre/Persona.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Ej15Septiembre/testAlbum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/Ej15Septiembre/testAlbum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/EjercicioPractica/Empleado.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/EjercicioPractica/Empleado.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/EjercicioPractica/Fecha.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/EjercicioPractica/Fecha.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/EjercicioPractica/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/EjercicioPractica/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Empresa.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/Empresa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Examen/Album.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/Examen/Album.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Examen/Cancion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/Examen/Cancion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Examen/Cantante.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/Examen/Cantante.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Examen/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/Examen/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Examen/Persona.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/Examen/Persona.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Examen/Sistema.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/Examen/Sistema.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Examen29/Cine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/Examen29/Cine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Examen29/Sala.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/Examen29/Sala.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Examen29/Visitante.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/Examen29/Visitante.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/HashSet_eje.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/HashSet_eje.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Hijo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/Hijo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Libro.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/Libro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Madre.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/Madre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Maps.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/Maps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Persona.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/Persona.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Productos26Abril.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/Productos26Abril.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Sistema.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/Sistema.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/SistemaDeRegistro.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/SistemaDeRegistro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/SistemaDeRegistroDePersonas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/SistemaDeRegistroDePersonas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Vivienda.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/Vivienda.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/ejercicio19abril.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/ejercicio19abril.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/producto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/producto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/producto2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/com/company/producto2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asd.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +106,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1xDeN4s7szWLxfhae1mo5Ud8uqM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -42,7 +132,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -52,7 +142,33 @@
       <recent name="$PROJECT_DIR$/src/com/company/E13Septiembre" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Main (2)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.E6Octubre.Main" />
+      <module name="java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.E6Octubre.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Practica10Noviembre.Main" />
+      <module name="java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.Practica10Noviembre.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.E4Octubre.Main" />
       <module name="java" />
@@ -98,45 +214,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTarjeta.cargarSube" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.E13Septiembre.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company.E13Septiembre" />
-      <option name="MAIN_CLASS_NAME" value="com.company.E13Septiembre.TestTarjeta" />
-      <option name="METHOD_NAME" value="cargarSube" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestTarjeta.ultimoMontoAbonado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.E13Septiembre.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company.E13Septiembre" />
-      <option name="MAIN_CLASS_NAME" value="com.company.E13Septiembre.TestTarjeta" />
-      <option name="METHOD_NAME" value="ultimoMontoAbonado" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.TestSistema.pasajerosConUltimoMontoAbonado" />
         <item itemvalue="JUnit.TestSistema.pasajerosQueSeHanSubidoAlgunaVez" />
-        <item itemvalue="JUnit.TestTarjeta.ultimoMontoAbonado" />
-        <item itemvalue="JUnit.TestTarjeta.cargarSube" />
       </list>
     </recent_temporary>
   </component>
