@@ -1,10 +1,12 @@
 package com.company;
 
+import java.util.HashSet;
+
 public class ProductoNoPerecedero extends ProductoAlimenticio{
 
     private float mgDeSodio;
 
-    public ProductoNoPerecedero(String nombre, String origen, String codigo, Float costo, Integer cantDiasParaVencerse, float mgDeSodio) {
+    public ProductoNoPerecedero(String nombre, String origen, Integer codigo, Float costo, Integer cantDiasParaVencerse, float mgDeSodio) {
         super(nombre, origen, codigo, costo, cantDiasParaVencerse);
         this.mgDeSodio = mgDeSodio;
     }
@@ -14,7 +16,7 @@ public class ProductoNoPerecedero extends ProductoAlimenticio{
         this.mgDeSodio = mgDeSodio;
     }
 
-    public ProductoNoPerecedero(String nombre, String origen, String codigo, Float costo, float mgDeSodio) {
+    public ProductoNoPerecedero(String nombre, String origen, Integer codigo, Float costo, float mgDeSodio) {
         super(nombre, origen, codigo, costo);
         this.mgDeSodio = mgDeSodio;
     }
@@ -23,7 +25,7 @@ public class ProductoNoPerecedero extends ProductoAlimenticio{
         this.mgDeSodio = mgDeSodio;
     }
 
-    public ProductoNoPerecedero(String nombre, String origen, String codigo, Float costo, Integer cantDiasParaVencerse) {
+    public ProductoNoPerecedero(String nombre, String origen, Integer codigo, Float costo, Integer cantDiasParaVencerse) {
         super(nombre, origen, codigo, costo, cantDiasParaVencerse);
     }
 
@@ -31,7 +33,7 @@ public class ProductoNoPerecedero extends ProductoAlimenticio{
         super(cantDiasParaVencerse);
     }
 
-    public ProductoNoPerecedero(String nombre, String origen, String codigo, Float costo) {
+    public ProductoNoPerecedero(String nombre, String origen, Integer codigo, Float costo) {
         super(nombre, origen, codigo, costo);
     }
 
@@ -48,7 +50,8 @@ public class ProductoNoPerecedero extends ProductoAlimenticio{
 
     @Override
     public float calcularPrecioFinal() {
-        return  this.getCosto() + this.calcularGananciaObtenida() + ProductoAlimenticio.getDESCUENTO();
+        Float precio = this.getCosto() + this.calcularGananciaObtenida();
+        return precio - (( precio * ProductoAlimenticio.getDESCUENTO()) / 100);
     }
 
     @Override
@@ -64,6 +67,24 @@ public class ProductoNoPerecedero extends ProductoAlimenticio{
 
     @Override
     public String tipoDeProducto() {
-        return "Producto Alimenticio";
+        return "Producto Alimenticio no perecedero";
     }
+
+    public HashSet<String> aptosParaHipertensos(SistemaSupermercado sistema){
+        HashSet<String> productosAptos = new HashSet<>();
+        HashSet<ProductoNoPerecedero> productos = sistema.obtenerProductosNoPerecederos();
+        for (ProductoNoPerecedero producto : productos) {
+            if(producto.nivelSodioApto()){
+                productosAptos.add(producto.getNombre());
+            }
+        }
+        return productosAptos;
+    }
+
+    public boolean nivelSodioApto(){
+        return this.getMgDeSodio() <= 1500;
+    }
+
+
+
 }

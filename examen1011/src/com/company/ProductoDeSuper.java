@@ -3,10 +3,10 @@ package com.company;
 public abstract class ProductoDeSuper implements Producto{
     private String nombre;
     private String origen;
-    private String codigo;
+    private Integer codigo;
     private Float costo;
 
-    public ProductoDeSuper(String nombre, String origen, String codigo, Float costo) {
+    public ProductoDeSuper(String nombre, String origen, Integer codigo, Float costo) {
         this.nombre = nombre;
         this.origen = origen;
         this.codigo = codigo;
@@ -32,11 +32,11 @@ public abstract class ProductoDeSuper implements Producto{
         this.origen = origen;
     }
 
-    public String getCodigo() {
+    public Integer getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(String codigo) {
+    public void setCodigo(Integer codigo) {
         this.codigo = codigo;
     }
 
@@ -47,4 +47,6 @@ public abstract class ProductoDeSuper implements Producto{
     public void setCosto(Float costo) {
         this.costo = costo;
     }
+
+
 }

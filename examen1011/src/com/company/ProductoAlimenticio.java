@@ -2,9 +2,9 @@ package com.company;
 
 public abstract class ProductoAlimenticio extends ProductoDeSuper{
     private Integer cantDiasParaVencerse;
-    static float DESCUENTO;
+    private static float DESCUENTO;
 
-    public ProductoAlimenticio(String nombre, String origen, String codigo, Float costo, Integer cantDiasParaVencerse) {
+    public ProductoAlimenticio(String nombre, String origen, Integer codigo, Float costo, Integer cantDiasParaVencerse) {
         super(nombre, origen, codigo, costo);
         this.cantDiasParaVencerse = cantDiasParaVencerse;
     }
@@ -13,7 +13,7 @@ public abstract class ProductoAlimenticio extends ProductoDeSuper{
         this.cantDiasParaVencerse = cantDiasParaVencerse;
     }
 
-    public ProductoAlimenticio(String nombre, String origen, String codigo, Float costo) {
+    public ProductoAlimenticio(String nombre, String origen, Integer codigo, Float costo) {
         super(nombre, origen, codigo, costo);
     }
 

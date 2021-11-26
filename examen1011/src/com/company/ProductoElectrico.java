@@ -4,7 +4,7 @@ public abstract class ProductoElectrico extends  ProductoDeSuper{
     private Integer cantDiasDeGarantia;
     static float RECARGO_POR_ENVIO;
 
-    public ProductoElectrico(String nombre, String origen, String codigo, Float costo, Integer cantDiasDeGarantia) {
+    public ProductoElectrico(String nombre, String origen, Integer codigo, Float costo, Integer cantDiasDeGarantia) {
         super(nombre, origen, codigo, costo);
         this.cantDiasDeGarantia = cantDiasDeGarantia;
     }
@@ -13,7 +13,7 @@ public abstract class ProductoElectrico extends  ProductoDeSuper{
         this.cantDiasDeGarantia = cantDiasDeGarantia;
     }
 
-    public ProductoElectrico(String nombre, String origen, String codigo, Float costo) {
+    public ProductoElectrico(String nombre, String origen, Integer codigo, Float costo) {
         super(nombre, origen, codigo, costo);
     }
 

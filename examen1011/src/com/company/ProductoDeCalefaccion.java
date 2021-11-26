@@ -4,7 +4,7 @@ public class ProductoDeCalefaccion extends ProductoElectrico{
 
     private float wattsDePotenciaMax;
 
-    public ProductoDeCalefaccion(String nombre, String origen, String codigo, Float costo, Integer cantDiasDeGarantia, float wattsDePotenciaMax) {
+    public ProductoDeCalefaccion(String nombre, String origen, Integer codigo, Float costo, Integer cantDiasDeGarantia, float wattsDePotenciaMax) {
         super(nombre, origen, codigo, costo, cantDiasDeGarantia);
         this.wattsDePotenciaMax = wattsDePotenciaMax;
     }
@@ -14,7 +14,7 @@ public class ProductoDeCalefaccion extends ProductoElectrico{
         this.wattsDePotenciaMax = wattsDePotenciaMax;
     }
 
-    public ProductoDeCalefaccion(String nombre, String origen, String codigo, Float costo, float wattsDePotenciaMax) {
+    public ProductoDeCalefaccion(String nombre, String origen, Integer codigo, Float costo, float wattsDePotenciaMax) {
         super(nombre, origen, codigo, costo);
         this.wattsDePotenciaMax = wattsDePotenciaMax;
     }
@@ -23,7 +23,7 @@ public class ProductoDeCalefaccion extends ProductoElectrico{
         this.wattsDePotenciaMax = wattsDePotenciaMax;
     }
 
-    public ProductoDeCalefaccion(String nombre, String origen, String codigo, Float costo, Integer cantDiasDeGarantia) {
+    public ProductoDeCalefaccion(String nombre, String origen, Integer codigo, Float costo, Integer cantDiasDeGarantia) {
         super(nombre, origen, codigo, costo, cantDiasDeGarantia);
     }
 
@@ -31,7 +31,7 @@ public class ProductoDeCalefaccion extends ProductoElectrico{
         super(cantDiasDeGarantia);
     }
 
-    public ProductoDeCalefaccion(String nombre, String origen, String codigo, Float costo) {
+    public ProductoDeCalefaccion(String nombre, String origen, Integer codigo, Float costo) {
         super(nombre, origen, codigo, costo);
     }
 
@@ -48,7 +48,8 @@ public class ProductoDeCalefaccion extends ProductoElectrico{
 
     @Override
     public float calcularPrecioFinal() {
-        return  this.getCosto() + this.calcularGananciaObtenida() + ProductoElectrico.getRecargoPorEnvio();
+        float precio = this.getCosto() + this.calcularGananciaObtenida();
+        return  precio + ((precio * ProductoElectrico.getRecargoPorEnvio())/100);
     }
 
     @Override
@@ -64,6 +65,6 @@ public class ProductoDeCalefaccion extends ProductoElectrico{
 
     @Override
     public String tipoDeProducto() {
-       return "Producto Electrico";
+       return "Producto Electrico de calefaccion";
     }
 }

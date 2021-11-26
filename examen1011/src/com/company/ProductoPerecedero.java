@@ -4,7 +4,7 @@ public class ProductoPerecedero extends ProductoAlimenticio{
 
     private float temperaturaMinimaDeFrio;
 
-    public ProductoPerecedero(String nombre, String origen, String codigo, Float costo, Integer cantDiasParaVencerse, float temperaturaMinimaDeFrio) {
+    public ProductoPerecedero(String nombre, String origen, Integer codigo, Float costo, Integer cantDiasParaVencerse, float temperaturaMinimaDeFrio) {
         super(nombre, origen, codigo, costo, cantDiasParaVencerse);
         this.temperaturaMinimaDeFrio = temperaturaMinimaDeFrio;
     }
@@ -14,7 +14,7 @@ public class ProductoPerecedero extends ProductoAlimenticio{
         this.temperaturaMinimaDeFrio = temperaturaMinimaDeFrio;
     }
 
-    public ProductoPerecedero(String nombre, String origen, String codigo, Float costo, float temperaturaMinimaDeFrio) {
+    public ProductoPerecedero(String nombre, String origen, Integer codigo, Float costo, float temperaturaMinimaDeFrio) {
         super(nombre, origen, codigo, costo);
         this.temperaturaMinimaDeFrio = temperaturaMinimaDeFrio;
     }
@@ -23,7 +23,7 @@ public class ProductoPerecedero extends ProductoAlimenticio{
         this.temperaturaMinimaDeFrio = temperaturaMinimaDeFrio;
     }
 
-    public ProductoPerecedero(String nombre, String origen, String codigo, Float costo, Integer cantDiasParaVencerse) {
+    public ProductoPerecedero(String nombre, String origen, Integer codigo, Float costo, Integer cantDiasParaVencerse) {
         super(nombre, origen, codigo, costo, cantDiasParaVencerse);
     }
 
@@ -31,7 +31,7 @@ public class ProductoPerecedero extends ProductoAlimenticio{
         super(cantDiasParaVencerse);
     }
 
-    public ProductoPerecedero(String nombre, String origen, String codigo, Float costo) {
+    public ProductoPerecedero(String nombre, String origen, Integer codigo, Float costo) {
         super(nombre, origen, codigo, costo);
     }
 
@@ -48,7 +48,8 @@ public class ProductoPerecedero extends ProductoAlimenticio{
 
     @Override
     public float calcularPrecioFinal() {
-        return  this.getCosto() + this.calcularGananciaObtenida() + ProductoAlimenticio.getDESCUENTO();
+        Float precio = this.getCosto() + this.calcularGananciaObtenida();
+        return precio - (( precio * ProductoAlimenticio.getDESCUENTO()) / 100);
     }
 
     @Override

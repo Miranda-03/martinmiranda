@@ -1,10 +1,13 @@
 package com.company;
 
+import java.util.HashMap;
+import java.util.HashSet;
+
 public class ProductoDeRefrigeracion extends ProductoElectrico{
 
     private float litrosDeCapacidad;
 
-    public ProductoDeRefrigeracion(String nombre, String origen, String codigo, Float costo, Integer cantDiasDeGarantia, float litrosDeCapacidad) {
+    public ProductoDeRefrigeracion(String nombre, String origen, Integer codigo, Float costo, Integer cantDiasDeGarantia, float litrosDeCapacidad) {
         super(nombre, origen, codigo, costo, cantDiasDeGarantia);
         this.litrosDeCapacidad = litrosDeCapacidad;
     }
@@ -14,7 +17,7 @@ public class ProductoDeRefrigeracion extends ProductoElectrico{
         this.litrosDeCapacidad = litrosDeCapacidad;
     }
 
-    public ProductoDeRefrigeracion(String nombre, String origen, String codigo, Float costo, float litrosDeCapacidad) {
+    public ProductoDeRefrigeracion(String nombre, String origen, Integer codigo, Float costo, float litrosDeCapacidad) {
         super(nombre, origen, codigo, costo);
         this.litrosDeCapacidad = litrosDeCapacidad;
     }
@@ -23,7 +26,7 @@ public class ProductoDeRefrigeracion extends ProductoElectrico{
         this.litrosDeCapacidad = litrosDeCapacidad;
     }
 
-    public ProductoDeRefrigeracion(String nombre, String origen, String codigo, Float costo, Integer cantDiasDeGarantia) {
+    public ProductoDeRefrigeracion(String nombre, String origen, Integer codigo, Float costo, Integer cantDiasDeGarantia) {
         super(nombre, origen, codigo, costo, cantDiasDeGarantia);
     }
 
@@ -31,7 +34,7 @@ public class ProductoDeRefrigeracion extends ProductoElectrico{
         super(cantDiasDeGarantia);
     }
 
-    public ProductoDeRefrigeracion(String nombre, String origen, String codigo, Float costo) {
+    public ProductoDeRefrigeracion(String nombre, String origen, Integer codigo, Float costo) {
         super(nombre, origen, codigo, costo);
     }
 
@@ -48,7 +51,8 @@ public class ProductoDeRefrigeracion extends ProductoElectrico{
 
     @Override
     public float calcularPrecioFinal() {
-        return  this.getCosto() + this.calcularGananciaObtenida() + ProductoElectrico.getRecargoPorEnvio();
+        float precio = this.getCosto() + this.calcularGananciaObtenida();
+        return  precio + ((precio * ProductoElectrico.getRecargoPorEnvio())/100);
     }
 
     @Override
@@ -64,6 +68,22 @@ public class ProductoDeRefrigeracion extends ProductoElectrico{
 
     @Override
     public String tipoDeProducto() {
-        return "Producto Electrico";
+        return "Producto Electrico de refrigeracion";
     }
+
+    public HashMap<Integer,Float> productosRefrigerantesConGranCapacidad(SistemaSupermercado sistema){
+        HashMap<Integer, Float> productosGrandes = new HashMap<>();
+        HashSet<ProductoDeRefrigeracion> productos = sistema.obtenerProductosRefrigeracion();
+        for (ProductoDeRefrigeracion producto : productos) {
+            if(producto.esGrande()){
+                productosGrandes.put(producto.getCodigo(), producto.getLitrosDeCapacidad());
+            }
+        }
+        return productosGrandes;
+    }
+
+    public boolean esGrande(){
+        return this.getLitrosDeCapacidad() >= 300 && super.getOrigen().equals("Argentina");
+    }
+
 }

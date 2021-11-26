@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.InputMismatchException;
 import java.util.Scanner;
-import com.fasterxml.jackson.core.*;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
 
@@ -70,7 +70,7 @@ public class SistemaSupermercado implements SistemaDeVentas
             Scanner ingresarOpcion = new Scanner(System.in);
             String nombre = ingresarDatos.nextLine();
             String origen = ingresarDatos.nextLine();
-            String codigo = ingresarDatos.nextLine();
+            Integer codigo = ingresarDatos.nextInt();
             float costo = ingresarDatos.nextFloat();
             // opcion 1 : alimentos ; 2 : electricos
             opcion = ingresarOpcion.nextInt();
@@ -121,11 +121,32 @@ public class SistemaSupermercado implements SistemaDeVentas
         return objetoJson;
     }
 
-    public static HashMap<String, Object> objetoAJson (SistemaSupermercado supermercado) throws IOException {
-        String json = JSONSUpermercado(supermercado);
+    public static HashMap deserializar (String json) throws IOException {
         ObjectMapper mapper2 = new ObjectMapper();
         HashMap map1 = mapper2.readValue(json,HashMap.class);
         return map1;
+    }
+
+    public HashSet<ProductoNoPerecedero> obtenerProductosNoPerecederos(){
+        HashSet<ProductoNoPerecedero> productosNoPerecederos = new HashSet<>();
+        for (ProductoDeSuper producto : this.getProductosVenta()) {
+            if(producto.tipoDeProducto().equals("Producto Alimenticio no perecedero")){
+                productosNoPerecederos.add((ProductoNoPerecedero) producto);
+            }
+        }
+
+        return productosNoPerecederos;
+    }
+
+    public HashSet<ProductoDeRefrigeracion> obtenerProductosRefrigeracion(){
+        HashSet<ProductoDeRefrigeracion> productosNoPerecederos = new HashSet<>();
+        for (ProductoDeSuper producto : this.getProductosVenta()) {
+            if(producto.tipoDeProducto().equals("Producto Electrico de refrigeracion")){
+                productosNoPerecederos.add((ProductoDeRefrigeracion) producto);
+            }
+        }
+
+        return productosNoPerecederos;
     }
 
 
