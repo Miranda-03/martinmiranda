@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    background-image: url(recursos/fondo.png);
+    background-position: top;
+}
+
+
+#color{
+    height: 100%;
+    width: 100%;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition:  1.5s;
+    background: repeating-linear-gradient(
+        45deg
+        , #003b3ee0, #000000c4 700px);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+#trabajos{
+    width: 100%;
+   position: absolute;
+}
+
+
+#contenido{
+    width: 954px;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: rgb(58 58 58 / 87%);
+    padding: 93px;
+    padding-top: 39px;
+    padding-bottom: 39px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 1px black;
+    margin-top: 150px;
+}
+
+#ejercicio{
+    display: block;
+    margin: auto;
+    width: 100%;
+    margin-top: 39px;
+    border-style: none;
+    height: 500px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#enunciado{
+    border-style: none;
+    width: 100%;
+    height: 170px;
+    background-color: rgb(33 37 41);
+    border-radius: 5px;
+}
+
+
+*, ::after, ::before {
+    box-sizing: initial;
+}
+
+
+.dropdown-item{
+    width: inherit;
+}
+
+.navbar-brand{
+    margin-left: 16px;
+}
+
+
+#Marzo-dropdown{
+    margin-left: 5%;
+}
+
+#opciones2{
+    color: rgb(131, 131, 131);
+    padding-left: 7px;
+    margin-top: 3px;
+    margin-bottom: 0;
+    cursor: default;
+}
+
+#curso{
+    margin-left: auto;
+
+}
+
+#menu{
+    position: fixed;
+    width: 100%;
+    top: 0;
+}

@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <title>Miranda - Ejercicios</title>
+        <link rel="icon" type="image/xcf" href="recursos/mw.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+        <meta charset = "utf-8">
+    </head>
+
+    <body>
+     
+    <div id="color">
+    </div>
+        <nav id="menu" class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Martin Miranda</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Marzo
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li><a id="hola" class="dropdown-item" href="#">19 de marzo</a></li>
+                    <li><a id="hola" class="dropdown-item" href="#">26 de marzo</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a id="abril" class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Abril
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li><a id="hola" class="dropdown-item" href="#">9 de abril</a></li>
+                    <li><a id="hola" class="dropdown-item" href="#">30 de abril</a></li>
+                    <li>
+                      <p id="opciones2">16 de abril:</p>
+                      <a id="hola" class="dropdown-item" href="#">parte 1</a>
+                      <a id="hola" class="dropdown-item" href="#">parte 2</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Mayo
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li><a id="hola" class="dropdown-item" href="#">14 de mayo</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Junio
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li><a id="hola" class="dropdown-item" href="#">4 de junio</a></li>
+                    <li><a id="hola" class="dropdown-item" href="#">25 de junio</a></li>
+                    <li>
+                      <p id="opciones2">18 de junio:</p>
+                      <a id="hola" class="dropdown-item" href="#">index 1</a>
+                      <a id="hola" class="dropdown-item" href="#">index 2</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Agosto
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li><a id="hola" class="dropdown-item" href="#">13 de agosto</a></li
+                    <li><a id="hola" class="dropdown-item" href="#">20 de agosto</a></li>
+                  </ul>
+                </li>
+
+
+               
+
+              </ul>
+              <a id="curso" class="navbar-brand" href="#">3°Computación</a>
+            </div>
+          </div>
+        </nav>
+
+            <div id="contenido" class="bg-dark text-white">
+                <iframe id="enunciado"  src="recursos/19 de marzo.html"></iframe>
+                <iframe id="ejercicio"  src="19 de marzo/index.html"></iframe>
+            </div>
+            
+            <script>
+
+                let botones = document.querySelectorAll("#hola");
+                let trabajo = document.getElementById("ejercicio");
+                let enunciado = document.getElementById("enunciado");
+                let archivoR = "recursos/";
+                let menuAbril = document.getElementById("abril");
+
+                for(let y = 0; botones.length; y++){
+                  botones[y].addEventListener("click", ()=>{
+                    if(botones[y].innerHTML == "parte 1" || botones[y].innerHTML == "parte 2"){   
+                      trabajo.src = "16 de abril/" + botones[y].innerHTML + ".html"
+                      enunciado.src = archivoR + "16 de abril.html";  
+                    }
+                    else if(botones[y].innerHTML == "index 1" || botones[y].innerHTML == "index 2"){   
+                      trabajo.src = "18 de junio/" + botones[y].innerHTML + ".html"
+                      enunciado.src = archivoR + "18 de junio.html";  
+                    }
+                    else{
+                    trabajo.src = botones[y].innerHTML + "/index.html"
+                    enunciado.src = archivoR + botones[y].innerHTML + ".html";
+                    }
+                  });
+                }      
+                 
+
+            </script>
+
+        </div>
+
+    
+
+    </body>
+
+</html>

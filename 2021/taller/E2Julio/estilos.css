@@ -1,0 +1,307 @@
+body{
+    margin: 0;
+}
+
+span{
+    width: 0px;
+    height: 7px;
+    position: fixed;
+    background-color: rgba(0, 62, 143, 0.719);
+    z-index: 2;
+    transition: all ease-out 0.5s;
+}
+
+#color{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#color svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#color:before{
+    content: "";
+    position: fixed;
+    top: 5%;
+    left: 85%;
+    z-index: 1;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background-image: repeating-linear-gradient( 
+45deg
+ , #0ba09982, #d4d4f500, #0ba09982 240px);
+    box-shadow: 0px 0px 18px 6px #0000004a;
+}
+
+#color:after{
+    content: "";
+    position: fixed;
+    top: 75%;
+    left: 2%;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background-image: repeating-linear-gradient( 
+45deg
+ , #0ba09982, #d4d4f500, #0ba09982 240px);
+    box-shadow: 0px 0px 18px 6px #0000004a;
+    animation: color 15s ease infinite;
+}
+
+h2{
+    font-family: sans-serif;
+    font-size: 17pt;
+    font-variant-caps: normal;
+}
+
+h1{
+    font-size: 26pt;
+    font-family: sans-serif;
+}
+
+#principio{
+    background-color: rgba(58, 58, 58);
+    height: 170px;
+    position: relative;
+    box-shadow: 0px -6px 20px 1px black;
+    background-color: rgba(17, 25, 40, 0.75);
+}
+
+
+
+#principio h1{
+    margin-top: 80px;
+    position: absolute;
+    background-image: linear-gradient(90deg, #5af067, #27c5f5, #5af067);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    margin-left: 13%;
+    transition: all 1s;
+}
+
+
+#principio h2{
+    margin-top: 125px;
+    position: absolute;
+    color: white;
+    margin-left: 13%;
+}
+
+#principio img{
+    width: 190px;
+    position: relative;
+    z-index: 2;
+    margin-top: 34px;
+    float: right;
+    margin-right: 11%;
+}
+
+#trabajos{
+    width: fit-content;
+    width: -moz-fit-content;
+    margin: auto;
+  
+}
+
+
+#contenido{
+    width: 954px;
+    display: block;
+    margin: auto;
+    margin-bottom: 70px;
+    background-color: rgba(17, 25, 40, 0.75);
+    padding: 93px;
+    padding-top: 39px;
+    padding-bottom: 39px;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+#ejercicio{
+    display: block;
+    margin: auto;
+    width: 100%;
+    margin-top: 39px;
+    border-style: none;
+    height: 500px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#enunciado{
+    border-style: none;
+    width: 100%;
+    height: 170px;
+}
+
+nav{
+    width: 130px;
+    background-color: #1f1f1fdb;
+}
+
+label{
+    font-family: Arial;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    background-color: rgba(17, 25, 40, 0.75);
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    user-select: none;
+}
+
+
+
+
+#listaEjercicios{
+    background-color: #0d1a28;
+    color: white;
+    list-style: none;
+    padding: 0;
+    width: 200px;
+    border: rgb(65, 65, 65) solid 1px;
+    border-radius: 5px;
+    margin-top: 6px;
+    margin-left: 1px;
+}
+
+
+#cosas{
+    overflow: hidden;
+    position: absolute;
+    width: fit-content;
+    height: 0;
+    transition: all .3s cubic-bezier(0.1, 0.1, 0.4, 0.43);
+    z-index: 1;
+}
+
+#boton{
+    border-style: none;
+    background-color: #1f1f1fdb;
+    cursor: pointer;
+    padding: 30px;
+    color: white;
+    transition: all 0s cubic-bezier(0.4, 0, 1, 1) 0s;
+    z-index: 2;
+    outline-style: none ;
+    background-color: transparent;
+    height: fit-content;
+    width: 100%;
+    padding: 0;
+    font-size: 23px;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#boton:hover{
+        background-color: #323537e6;
+}
+
+#listaEjercicios li{
+    background-color: transparent;
+    cursor: pointer;
+   
+}
+
+#arrow{
+    position: relative;
+    display: block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: rgb(255, 255, 255) ;
+    clip-path: polygon(50% 80%, 0 20%, 100% 20%);
+  margin-top: 14px;
+    margin-left: 10px;
+    transition: all .5s;
+}
+
+.input-btn{
+    display: none;
+}
+
+
+#listaContenedor{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  ;
+}
+
+#listaContenedor div{
+    margin-right: 25px;
+}
+
+
+#silla{
+    position: fixed;
+    top: 90%;
+    left: 95%;
+    z-index: 2;
+    width: 60px;
+    transition: all .2s
+}
+
+#label-silla{
+    background-color: transparent;
+}
+
+[id="input-silla"]:checked + #silla{
+    transform: rotate(180deg);
+}
+
+
+.flecha-opciones{
+    position: absolute;
+    width: fit-content;
+    margin-left: 118px;
+    top: 107px;
+    transform: scale(0.5);
+}
+
+.boot-btn{
+    width: 190px;
+    height: fit-content;
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 2%;
+    background-color: rgba(17, 25, 40, 0.75);
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    padding: 7px 7px;
+    border-radius: 0px 0px 20px 20px;
+    cursor: auto;
+}
+
+.boot-btn svg{
+    width: 30px;
+    height: 30px;
+}
+
+.boot-btn a{
+    text-decoration: none;
+    width: initial;
+    margin-left: 10px;
+    color: #563d7c;
+}
+
+.boot-btn a:hover{
+    text-decoration: underline;
+}

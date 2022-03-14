@@ -1,0 +1,54 @@
+Parte 1
+
+1. Las clases son estructuras de código que se usan para crear objetos, se puden definir
+como moldes. Las mismas tienen atributos 
+
+2. Un objeto es una instancia de una clase cuyos atributos que se sacan de las clases tienen
+diferentes valores. Se puede definir como la gelletita que se hizo en el molde que seria
+la clase.
+
+3. Un constructor permite al código construir un objeto de una determinada clase. Existen 
+diferentes constructores para diretentes clases.
+
+4.Constructor A:  Persona P1 = new Persona();
+Constructor B: Persona P2 = new Persona(nombre);
+
+5. Ilimitados
+
+6. Los atributos son variables (String, int, float, etc) que representan las caracteristicas de  determinada clase, por ejemplo la clase Persona tiene dos atributos de tipo String que representan
+su nombre y apellido.
+
+7. Los metodos de una clase son funciones que pueden devolver informacion acerca del obejeto o 
+modificar ciertos atributos del mismo, representan las acciones que puede hacer una clase.
+
+8. Si.
+
+9. Se usa para especificar a que variable se esta haciendo referencia, si en los parametros del 
+constructor se define una variable con el mismo nombre que el de un atributo, a este se le
+debe poner this. para saber a cual se esta haciendo referencia.
+
+10. Que todos sus atributos sean iguales.
+
+11. Para indicar que se inicializa una nueva instancia de una variable. 
+
+12. True.
+
+13. Se usa para obtener clases de un proyecto.
+
+14. Para importar librerias. 
+
+15. Para poder ingresar cosas en la consola, es decir para hacer un input.
+
+16. Es para poder guardar instancias de un solo tipo de variable que se puede especificar. 
+Sus caracteristicas son que las variables se guardan en un orden determinado tal que la primer
+instancia guardada tendra la posicion 0, y con esto se puede acceder a esa variable indicando la 
+posicion.
+
+17. Es como el ArrayList pero solo se guardan obejetos y de forma desordenada, ademas de que no 
+permite obejetos duplicados.
+
+18. Es una lista que guarda dos variables por espacio de la cual la primera se llama clave y la 
+segunda es el valor de la llave. Solo almacena referencias de objetos, no pueden existir claves 
+iguales y mediante la llave se pude saber el valor de la misma.
+
+

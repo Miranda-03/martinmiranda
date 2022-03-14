@@ -1,0 +1,171 @@
+<html>
+    <head>
+        <title>Miranda - Ejercicios</title>
+        <link rel="icon" type="image/xcf" href="recursos/mw.png">
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+        
+        <meta charset = "utf-8">
+    </head>
+
+    <body>
+    <div id="color">
+        <svg width="2629" height="1445" viewBox="0 0 2629 1445" fill="none">
+            <path d="M2629 0H0V1445H2629V0Z" fill="url(#paint0_linear)"/>
+            <path d="M0 1445V0H2629L0 1445Z" fill="url(#paint1_linear)" fill-opacity="0.87"/>
+            <path d="M2629 1445V0H0L2629 1445Z" fill="url(#paint2_linear)" fill-opacity="0.87"/>
+            <defs>
+            <linearGradient id="paint0_linear" x1="1445.5" y1="181.045" x2="153.418" y2="-90.3167" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#0EBCC2"/>
+            <stop offset="1" stop-color="#05C1FF"/>
+            </linearGradient>
+            <linearGradient id="paint1_linear" x1="401.047" y1="1704.69" x2="1599.31" y2="1100.47" gradientUnits="userSpaceOnUse">
+            <stop stop-opacity="0"/>
+            <stop offset="1"/>
+            </linearGradient>
+            <linearGradient id="paint2_linear" x1="-44.2464" y1="1392.84" x2="2986.74" y2="-1004" gradientUnits="userSpaceOnUse">
+            <stop stop-opacity="0"/>
+            <stop offset="1"/>
+            </linearGradient>
+            </defs>
+            </svg>
+    </div>
+
+        <div id="principio">
+            <h1>Martín Miranda
+            </h1>
+            <h2>3°Computación</h2>
+            <img src="recursos/ipm.png">
+            <label class="boot-btn">
+                <svg width="256" height="256" viewBox="0 0 256 256" fill="none">
+                    <path d="M0 222.991C0 241.223 14.7785 256 33.0088 256H222.991C241.223 256 256 241.221 256 222.991V33.0088C256 14.7765 241.221 0 222.991 0H33.0088C14.7765 0 0 14.7785 0 33.0088V222.991Z" fill="#563D7C"/>
+                    <path d="M106.158 113.238V76.9846H138.069C141.109 76.9846 144.039 77.2379 146.861 77.7444C149.684 78.2509 152.18 79.1555 154.351 80.458C156.522 81.7605 158.258 83.5696 159.561 85.8852C160.863 88.2008 161.515 91.1676 161.515 94.7857C161.515 101.298 159.561 106.002 155.653 108.896C151.746 111.791 146.753 113.238 140.674 113.238H106.158ZM72.075 50.5V205.5H147.187C154.134 205.5 160.9 204.632 167.485 202.895C174.07 201.158 179.931 198.481 185.069 194.863C190.206 191.245 194.295 186.577 197.334 180.861C200.373 175.144 201.893 168.378 201.893 160.563C201.893 150.866 199.541 142.581 194.838 135.707C190.134 128.832 183.006 124.02 173.455 121.27C180.401 117.942 185.648 113.672 189.193 108.462C192.739 103.252 194.512 96.7395 194.512 88.9244C194.512 81.6881 193.318 75.6097 190.93 70.6891C188.542 65.7684 185.177 61.8247 180.835 58.8578C176.494 55.891 171.284 53.7563 165.205 52.4538C159.127 51.1513 152.397 50.5 145.016 50.5H72.075ZM106.158 179.015V136.466H143.279C150.66 136.466 156.594 138.167 161.081 141.568C165.567 144.969 167.81 150.649 167.81 158.609C167.81 162.662 167.123 165.99 165.748 168.595C164.373 171.2 162.528 173.263 160.212 174.782C157.897 176.302 155.219 177.387 152.18 178.039C149.141 178.69 145.957 179.015 142.628 179.015H106.158Z" fill="white"/>
+                </svg>
+                <a href="/home/martin/martinmiranda/taller/E2Julio/E2Julio-Bootstrap/index.html">Bootstrap</a>
+            </label>    
+        </div>
+
+
+        <div id="listaContenedor">
+            <div>
+                
+                <label id="Marzo" for="m-btn"  class="boton">Marzo
+                   <span id="arrow"></span>
+                </label>
+                
+                <input type="checkbox" id="m-btn" class="input-btn" onchange="check(0)">
+                
+                <div id="cosas">
+                <ul id="listaEjercicios" class="lista-btn">
+                        <li><input  id="boton" type="button" value="19 de marzo" onclick="cambiarHTML('19Marzo/index2.html', 'recursos/19Marzo.html', '19 de marzo')"></li> <!-- 19 de marzo-->
+                        <li><input id="boton" type="button" value="26 de marzo" onclick="cambiarHTML('26Marzo/index26.html', 'recursos/26Marzo.html', '26 de marzo')"></li> <!-- 26 de marzo-->
+                </ul>
+                </div>
+            </div>
+
+
+            <div>
+                <label for="m-btn-2" class="boton">Abril
+                    <span id="arrow"></span>
+                </label>
+                <input type="checkbox" id="m-btn-2" class="input-btn" onchange="check(1)">
+                <div id="cosas">
+                <ul id="listaEjercicios" class="lista-btn">
+                    <li><input id="boton" type="button" value="9 de abril" onclick="cambiarHTML('9Abril/index9abril.html', 'recursos/9Abril.html', '9 de abril')"></li> <!-- 9 de abril-->
+                    <li><input id="boton" type="button" value="30 de abril" onclick="cambiarHTML('30Abril/E30Abril.html', 'recursos/30Abril.html', '30 de abril')"></li> <!-- 30 de abril-->
+                        <li><input id="boton" type="button" value="16 de abril">
+                            <div class="flecha-opciones">
+                                <svg class="icon icon-tabler icon-tabler-arrows-left-down" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M7 3l-4 4l4 4" />
+                                    <path d="M3 7h11a3 3 0 0 1 3 3v11" />
+                                    <path d="M13 17l4 4l4 -4" />
+                                  </svg>
+                            </div>
+                            <div id="opciones">
+                                <input id="boton" type="button" value="opcion 1" onclick=" cambiarHTML('16Abril/index16abril.html', 'recursos/16Abril.html', '16 de abril')">
+                                <input id="boton" type="button" value="opcion 2" onclick=" cambiarHTML('16Abril/index16-2do.html', 'recursos/16Abril.html', '16 de abril')">
+                            </div>
+                        </li> <!-- 16 de abril-->       
+                </ul>
+                </div>
+            </div>
+
+
+            <div>
+                <label for="m-btn-3" class="boton">Mayo
+                    <span id="arrow"></span>
+                </label>
+                <input type="checkbox" id="m-btn-3" class="input-btn" onchange="check(2)">
+                <div id="cosas">
+                <ul id="listaEjercicios" class="lista-btn">
+                    <li><input id="boton" type="button" value="14 de mayo" onclick="cambiarHTML('14Mayo/E30Abril.html', 'recursos/14Mayo.html', '14 de mayo')"></li> <!-- 14 de mayo-->
+                </ul>
+                </div>
+            </div>
+
+            <div>
+                <label for="m-btn-4" class="boton">Junio
+                    <span id="arrow"></span>
+                </label>
+                <input type="checkbox" id="m-btn-4" class="input-btn" onchange="check(3)">
+                <div id="cosas">
+                <ul id="listaEjercicios" class="lista-btn">
+                    <li><input id="boton" type="button" value="4 de junio" onclick="cambiarHTML('4Junio/E4junio.html', 'recursos/4Junio.html', '4 de junio')"></li> <!-- 4 de junio-->
+                    
+                    <li><input id="boton" type="button" value="25 de junio" onclick="cambiarHTML('25Junio/E4junio.html', 'recursos/25Junio.html', '25 de junio')"></li> <!-- 25 de junio-->
+                    <li><input id="boton" type="button" value="18 de junio" >
+                        <div class="flecha-opciones">
+                            <svg class="icon icon-tabler icon-tabler-arrows-left-down" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M7 3l-4 4l4 4" />
+                                <path d="M3 7h11a3 3 0 0 1 3 3v11" />
+                                <path d="M13 17l4 4l4 -4" />
+                              </svg>
+                        </div>
+                        <div id="opciones18Junio">
+                            <input id="boton" type="button" value="opcion 1" onclick=" cambiarHTML('18Junio/index19.html', 'recursos/18Junio.html', '18 de junio')">
+                            <input id="boton" type="button" value="opcion 2" onclick=" cambiarHTML('18Junio/index26.html', 'recursos/18Junio.html', '18 de junio')">
+                        </div>
+                    </li> <!-- 18 de junio-->
+                </ul>
+                </div>
+            </div>
+
+            <div>
+                <label for="m-btn-5" class="boton">Agosto
+                    <span id="arrow"></span>
+                </label>
+                <input type="checkbox" id="m-btn-5" class="input-btn" onchange="check(4)">
+                <div id="cosas">
+                <ul id="listaEjercicios" class="lista-btn">
+                    <li><input id="boton" type="button" value="20 de agosto" onclick="cambiarHTML('20Agosto/index.html', 'recursos/20Agosto.html', '20 de agosto')"></li> <!-- 4 de junio-->                 
+                </ul>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="trabajos">
+            <div id="contenido">
+                <iframe id="enunciado"  src="recursos/19Marzo.html"></iframe>
+                <iframe id="ejercicio"  src="19Marzo/index2.html"></iframe>
+            </div>
+        </div>
+
+
+        <label id="label-silla" for="input-silla"><input type="checkbox" id="input-silla" style="display: none;"><img id="silla" src="recursos/chair_s.png"></label>
+        
+
+    </body>
+
+    <script type="text/javascript" src="recursos/vanilla-tilt.min.js"></script>
+        <script>
+            VanillaTilt.init(document.querySelector("#principio img"), {
+                max: 25,
+                speed: 400,
+            });
+        </script>
+
+<script type="text/javascript" src="script.js"></script>
+
+</html>

@@ -1,0 +1,49 @@
+
+ <head>
+    <title>Ejercicio del 4 de Junio </title>
+    <script type="text/javascript" src="E4Junio.js"></script>
+    <script src="jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+
+
+
+
+    <div id="contenedor">
+
+        
+            <button type="button" id="mostrar" onclick="mostrarTodo()">Nuevos datos</button>
+            
+        
+            <button type="button" id="agregar" style="display: none;" onclick="ingresarDatos()">Ingresar</button>    
+        
+            <button type="button" id="modificar" onclick="modAtributos()">Tema 2</button>
+
+
+
+        <table id="tabla" style="border-spacing: 0;">
+            <tr id="columnas" style="color: black;">
+                <td>Nombre</td>
+                <td>Apellido</td>
+                <td>Edad</td>
+            </tr>
+            
+        </table>
+    </div>
+
+
+    <script>
+
+        function modAtributos(){
+            $("td").css("background-color", "black");
+            $("td").css("color", "white");
+            $("td").css("font-family", "monospace");
+
+            let mensaje = "Atributos modificados del elemento td:\n\n background-color = " + $("td").css("background-color") + "\n"
+            mensaje += " color = " + $("td").css("color") + "\n" + " font-family = " +  $("td").css("font-family");
+            alert(mensaje);
+        }
+
+    </script>
+

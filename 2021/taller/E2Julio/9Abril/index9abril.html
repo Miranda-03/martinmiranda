@@ -1,0 +1,145 @@
+<div id="contenedor"> 
+    <div>
+        <input id="num" type="number">
+
+        <button onclick="crearArreglo(arreglo, numero)">Push to array</button>
+    </div>
+
+    <div>
+        <input id="num2" type="number">
+
+        <button onclick="cantApariciones(arreglo, cant, numX)">cantidad de apariciones</button>
+    </div>
+    <div>
+
+        <input id="e-mail" type="email">
+
+        <button onclick="comprobarMail(correo)">Verificar</button>
+
+    </div>
+
+    <div>    
+        <input id="numeroTelefono" type="text">
+
+        <button onclick="comprobarNumero(numeroT)">Verificar numero</button>
+    </div>
+
+</div>
+
+<script>
+         
+         let arreglo = [];
+
+         numero = [];
+
+         numX = [];
+
+         var cant = 0;
+
+         let correo;
+
+         let numeroT;
+
+      function crearArreglo(arreglo, numero){  
+          numero = document.getElementById("num").value;
+          arreglo.push(numero);
+          console.log(arreglo);
+          console.log(arreglo.length);
+          return arreglo;
+      }
+
+      function cantApariciones(arreglo, cant, numX){
+        numX = document.getElementById("num2").value;
+          for(var y = 0; y < arreglo.length; y++){
+              if (arreglo[y] == numX){
+                  cant++;
+              }
+          }
+          console.log("cantidad de veces que aparece el numero " + numX + ": " + cant)
+      }
+
+      function comprobarMail(correo){
+        correo = document.getElementById("e-mail").value;
+        var verf;
+        for(var f = 1; f < (correo.length - 1); f++){
+            if(correo[f] == "@"){
+                verf = 1;
+            }
+        }
+
+        if(verf == 1){
+            console.log("true");
+            return true;
+        }
+        else{
+            console.log("false");
+            return false;
+        }
+      }
+
+      function comprobarNumero(numeroT){
+        numeroT = document.getElementById("numeroTelefono").value;
+          var contNumeros = 0;
+          if(numeroT[0] == 0){
+              if(numeroT[1] == 1 && numeroT[2] == 1){
+                for(var p = 3; p < numeroT.length; p++){
+                    contNumeros++;
+                }
+                if(contNumeros == 8){
+                    console.log("true");
+                    return true;
+                }
+              }
+          }
+          else if(numeroT[0] == 1 && numeroT[1] == 1){
+            for(var p = 2; p < numeroT.length; p++){
+                    contNumeros++;
+                }
+                if(contNumeros == 8){
+                    console.log("true");
+                    return true;
+                }
+          }
+      }
+
+      
+
+</script>
+
+
+<style>
+    #contenedor{
+        display: inline-grid;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    div{
+        margin: auto;
+    }
+
+    input{
+        border-style: none;
+        padding: 5px;
+        background-color: #e4e4e4 !important;
+        border-bottom-style: solid;
+        outline-style: none;
+    }
+
+    button{
+        margin: auto;
+        border-style: none;
+        outline-style: none;
+        font-family: system-ui;
+        cursor: pointer;
+        padding: 4px;
+    }
+
+    button:hover{
+        border-bottom-style: solid;
+        border-color: black;
+        border-width: 2px;
+    }
+</style>

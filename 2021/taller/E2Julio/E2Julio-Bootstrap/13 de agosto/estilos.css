@@ -1,0 +1,41 @@
+
+
+
+#contenedor{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tabla{
+    margin: auto; 
+    width: 700px;
+}
+
+#agregar, #mostrar{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-style: none;
+    padding: 15px;
+    font-family: system-ui;
+    background-color: #daffe9;
+    cursor: pointer;
+}
+
+#agregar{
+    background-color: #dae5ff;
+}
+
+
+
+#in1, #in2, #in3{
+    border-style: none;
+    padding: 5px;
+   
+    border-bottom-style: solid;
+    outline-style: none;
+    width: 98%;
+}
